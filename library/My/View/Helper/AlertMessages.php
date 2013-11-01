@@ -11,11 +11,8 @@ class My_View_Helper_AlertMessages extends Zend_View_Helper_Abstract
 
 		if ( !empty( $flashMessenger ) ) {
 
-			if ( defined( 'TWITTER_BOOTSTRAP' ) ) {
-				$closeButton = '<button type="button" class="close" data-dismiss="alert">×</button>';
-			} else {
-				$closeButton = '';
-			}
+
+			$closeButton = '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
 
 			if ( $flashMessenger->setNamespace( 'success' )->hasMessages() ) {
 				foreach ( $flashMessenger->getMessages() as $msg ) {
@@ -35,9 +32,9 @@ class My_View_Helper_AlertMessages extends Zend_View_Helper_Abstract
 				}
 			}
 
-			if ( $flashMessenger->setNamespace( 'notice' )->hasMessages() ) {
+			if ( $flashMessenger->setNamespace( 'warning' )->hasMessages() ) {
 				foreach ( $flashMessenger->getMessages() as $msg ) {
-					$output .= '<div class="alert fade in">';
+					$output .= '<div class="alert alert-warning fade in">';
 					$output .= $closeButton;
 					$output .= '<b>' . $msg . '</b>';
 					$output .= '</div>';

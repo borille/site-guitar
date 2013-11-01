@@ -2,51 +2,52 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
+				<div class="title">PAGES</div>
 				<ul>
 					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'index' ), null, false ); ?>">
+						<a href="<?php echo $this->url( array( 'controller' => 'index' ), null, true ); ?>">
 							HOME
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'index' ), null, false ); ?>">
+						<a href="<?php echo $this->url( array( 'controller' => 'index' ), null, true ); ?>">
 							<?php echo strtoupper( $this->translate( 'blog' ) ) ?>
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'index', 'action' => 'contact' ), null, false ); ?>">
+						<a href="<?php echo $this->url( array( 'controller' => 'index', 'action' => 'contact' ), null, true ); ?>">
 							<?php echo strtoupper( $this->translate( 'contact' ) ) ?>
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'index', 'action' => 'about' ), null, false ); ?>">
+						<a href="<?php echo $this->url( array( 'controller' => 'index', 'action' => 'about' ), null, true ); ?>">
 							<?php echo strtoupper( $this->translate( 'about' ) ) ?>
 						</a>
 					</li>
 				</ul>
 			</div>
 			<div class="col-md-3">
+				<div class="title"><?php echo strtoupper( $this->translate( 'user' ) ) ?></div>
 				<ul>
-					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'index' ), null, false ); ?>">
-							HOME
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'index' ), null, false ); ?>">
-							<?php echo strtoupper( $this->translate( 'blog' ) ) ?>
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'index', 'action' => 'contact' ), null, false ); ?>">
-							<?php echo strtoupper( $this->translate( 'contact' ) ) ?>
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'index', 'action' => 'about' ), null, false ); ?>">
-							<?php echo strtoupper( $this->translate( 'about' ) ) ?>
-						</a>
-					</li>
+
+					<?php if ( !Zend_Auth::getInstance()->hasIdentity() ) { ?>
+						<li>
+							<a href="<?php echo $this->url( array( 'controller' => 'user', 'action' => 'login' ), null, true ); ?>">
+								<?php echo strtoupper( $this->translate( 'login' ) ) ?>
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo $this->url( array( 'controller' => 'user', 'action' => 'sign-up' ), null, true ); ?>">
+								<?php echo strtoupper( $this->translate( 'sign-up' ) ) ?>
+							</a>
+						</li>
+					<?php } else { ?>
+						<li>
+							<a href="<?php echo $this->url( array( 'controller' => 'user' ), null, true ); ?>">
+								<?php echo strtoupper( $this->translate( 'account' ) ) ?>
+							</a>
+						</li>
+					<?php } ?>
 				</ul>
 			</div>
 		</div>

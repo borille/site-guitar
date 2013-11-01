@@ -17,6 +17,7 @@ class My_View_Helper_Navbar extends Zend_View_Helper_Abstract
 		foreach ( $itens as $key => $value ) {
 
 			$controller = $this->view->controller;
+			$action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 
 			if ( is_array( $value ) ) {
 				$url = Zend_View_Helper_Url::url( $value, null, TRUE );
@@ -24,7 +25,7 @@ class My_View_Helper_Navbar extends Zend_View_Helper_Abstract
 				$url = Zend_View_Helper_Url::url( array( 'controller' => $controller, 'action' => $value ), null, TRUE );
 			}
 
-			if ( $this->view->action === $value && $this->view->controller === $controller ) {
+			if ( $action === $value ) {
 				$output .= '<li class="active">';
 			} else {
 				$output .= '<li>';

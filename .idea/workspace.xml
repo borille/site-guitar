@@ -2,65 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c65830d-f463-4c69-852b-44371799a8f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/forms/Contact.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/My/View/Helper/Load.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/forms/Login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/forms/SignUp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/forms/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/models/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/models/DbTable/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/controllers/UserController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/index/about.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/carousel.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout2/carousel.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/carousel.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/index/contact.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/index/contact.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/footer.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout2/footer.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/header.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout2/header.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/header.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/user/index.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/jumbotron.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout2/jumbotron.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/jumbotron.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/layout.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout2/layout.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/layout.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/layout3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/user/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/user/login.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/navbar.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout2/navbar.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/user/sign-up.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/user/sign-up.phtml" />
-      <change type="DELETED" beforePath="C:\wamp\www\borille\site-guitar\application\modules\default\views\scripts\layout.phtml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/forms/ForgotPassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/index/about.css" />
+      <change type="DELETED" beforePath="C:\wamp\www\borille\site-guitar\public\css\index\contact.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\borille\site-guitar\public\css\user\login.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\borille\site-guitar\public\css\user\sign-up.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.zfproject.xml" afterPath="$PROJECT_DIR$/.zfproject.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/My/View/Helper/AlertMessages.php" afterPath="$PROJECT_DIR$/library/My/View/Helper/AlertMessages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/forms/Contact.php" afterPath="$PROJECT_DIR$/application/modules/default/forms/Contact.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/My/Action/Helper.php" afterPath="$PROJECT_DIR$/library/My/Action/Helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/forms/Login.php" afterPath="$PROJECT_DIR$/application/modules/default/forms/Login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/My/View/Helper/Navbar.php" afterPath="$PROJECT_DIR$/library/My/View/Helper/Navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/forms/SignUp.php" afterPath="$PROJECT_DIR$/application/modules/default/forms/SignUp.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/UserController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" afterPath="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" afterPath="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/index/about.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/index/about.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/configs/application.ini" afterPath="$PROJECT_DIR$/application/configs/application.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/carousel.css" afterPath="$PROJECT_DIR$/public/css/carousel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/index/contact.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/index/contact.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/default.js" afterPath="$PROJECT_DIR$/public/js/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/index/index.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/index/index.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/user/index.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/user/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/layout.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/layout.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/layout3.css" afterPath="$PROJECT_DIR$/public/css/layout3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/user/login.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/user/login.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/user/sign-up.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/user/sign-up.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="site-guitar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383216717183" ignored="false" />
-    <file path="/dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383222402014" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383308509083" ignored="false" />
+    <file path="/dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383322102195" ignored="false" />
     <file path="/ErrorController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381864858799" ignored="false" />
     <file path="/application.ini" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383233437734" ignored="false" />
     <file path="/Bootstrap.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381865944917" ignored="false" />
-    <file path="/index.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383239791982" ignored="false" />
-    <file path="/layout.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383239896290" ignored="false" />
+    <file path="/index.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383332948773" ignored="false" />
+    <file path="/layout.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383332668427" ignored="false" />
     <file path="/header.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383162398766" ignored="false" />
-    <file path="/footer.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383227986051" ignored="false" />
+    <file path="/footer.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383325671181" ignored="false" />
     <file path="/a.dummy" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381932312126" ignored="false" />
     <file path="$PROJECT_DIR$/library/My/Model/DbTable.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381932383699" ignored="false" />
     <file path="$PROJECT_DIR$/library/My/Model/Model.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381932383699" ignored="false" />
@@ -103,28 +86,35 @@
     <file path="$PROJECT_DIR$/library/My/Auth/Interface.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381932382681" ignored="false" />
     <file path="$PROJECT_DIR$/library/My/Service/Abstract.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381932382681" ignored="false" />
     <file path="$PROJECT_DIR$/library/My/Pdf/MyZendPdf.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381932383699" ignored="false" />
-    <file path="/UserController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383161204609" ignored="false" />
+    <file path="/UserController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383325528250" ignored="false" />
     <file path="/User.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383160908916" ignored="false" />
     <file path="/sign-up.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383156050087" ignored="false" />
-    <file path="/SignUp.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383157389957" ignored="false" />
+    <file path="/SignUp.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383328465615" ignored="false" />
     <file path="/Log.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383159170692" ignored="false" />
     <file path="/Internationalization.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383159682489" ignored="false" />
-    <file path="/navbar.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383234251517" ignored="false" />
+    <file path="/navbar.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383331508571" ignored="false" />
     <file path="/IndexController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383240128236" ignored="false" />
-    <file path="/contact.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383219384371" ignored="false" />
-    <file path="/Login.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383221708173" ignored="false" />
-    <file path="/login.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383222061211" ignored="false" />
+    <file path="/contact.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383310740560" ignored="false" />
+    <file path="/Login.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383313801172" ignored="false" />
+    <file path="/login.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383321736430" ignored="false" />
     <file path="/Contact.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383223366486" ignored="false" />
     <file path="/contact.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383223357860" ignored="false" />
     <file path="/sign-up.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383223428791" ignored="false" />
     <file path="/style.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383235944415" ignored="false" />
     <file path="/carousel.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383233722414" ignored="false" />
-    <file path="/carousel.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383234580383" ignored="false" />
+    <file path="/carousel.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383313183808" ignored="false" />
     <file path="/layout1.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383235949168" ignored="false" />
-    <file path="/default.js" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383239497564" ignored="false" />
-    <file path="/layout3.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383238044064" ignored="false" />
+    <file path="/default.js" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383314170334" ignored="false" />
+    <file path="/layout3.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383322785011" ignored="false" />
     <file path="/Load.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383239758004" ignored="false" />
     <file path="/Action.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383240262064" ignored="false" />
+    <file path="/login.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383248851898" ignored="false" />
+    <file path="/about.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383330341042" ignored="false" />
+    <file path="/forgot-password.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383324444714" ignored="false" />
+    <file path="/AlertMessages.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383323599159" ignored="false" />
+    <file path="/ForgotPassword.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383324844688" ignored="false" />
+    <file path="/Navbar.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383327878444" ignored="false" />
+    <file path="/about.css" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383329628939" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,28 +134,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/layout.phtml">
+      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="82" selection-start="858" selection-end="858" vertical-scroll-proportion="0.4266467">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/user/index.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="-0.7037037">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="193" selection-end="193" vertical-scroll-proportion="-8.444445">
+            <state line="67" column="5" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.9236527">
               <folding />
             </state>
           </provider>
@@ -199,6 +171,8 @@
       <command text="zf create action contact index 1 default" />
       <command text="zf create action about index 1 default" />
       <command text="zf create form contact default" />
+      <command text="zf create action ForgotPassword user 1 default" />
+      <command text="zf create form ForgotPassword default" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -215,22 +189,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/css/carousel.css" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/public/css/footer.css" />
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout2/layout.phtml" />
-        <option value="$PROJECT_DIR$/public/css/layout1.css" />
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/layout.phtml" />
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/index/index.phtml" />
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/header.phtml" />
-        <option value="$PROJECT_DIR$/application/configs/application.ini" />
-        <option value="$PROJECT_DIR$/public/css/layout3.css" />
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/layout.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/user/forgot-password.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/user/sign-up.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/user/index.phtml" />
-        <option value="$PROJECT_DIR$/library/My/Controller/Action.php" />
-        <option value="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/public/js/default.js" />
-        <option value="$PROJECT_DIR$/library/My/View/Helper/Load.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml" />
+        <option value="$PROJECT_DIR$/application/configs/application.ini" />
+        <option value="$PROJECT_DIR$/library/My/View/Helper/Navbar.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/forms/SignUp.php" />
+        <option value="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" />
+        <option value="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" />
+        <option value="$PROJECT_DIR$/public/css/index/about.css" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/index/about.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/layout.phtml" />
+        <option value="$PROJECT_DIR$/public/css/index/index.css" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/index/index.phtml" />
       </list>
     </option>
   </component>
@@ -355,25 +329,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="My" />
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -775,10 +739,10 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="File.Encoding" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../site-music" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -858,16 +822,16 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24748924" sideWeight="0.52427185" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25107604" sideWeight="0.65048546" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47572815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34951457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -941,107 +905,109 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/layout.phtml">
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="705" selection-end="705" vertical-scroll-proportion="0.39820358">
+        <state line="20" column="8" selection-start="327" selection-end="375" vertical-scroll-proportion="0.2610687">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/footer.css">
+    <entry file="file://$PROJECT_DIR$/application/modules/default/forms/ForgotPassword.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="21" selection-start="317" selection-end="317" vertical-scroll-proportion="0.20719424">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/header.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="50" selection-start="98" selection-end="98" vertical-scroll-proportion="0.056886226">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/layout2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/My/View/Helper/SetMask.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/My/Controller/Action/Helper/ServerHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="42" selection-start="45" selection-end="49" vertical-scroll-proportion="0.05873261">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/layout3.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.02733813">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="195" selection-end="195" vertical-scroll-proportion="0.13669065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/Zend/Controller/Action.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="0" selection-start="4345" selection-end="4383" vertical-scroll-proportion="0.8">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/user/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="119" selection-end="119" vertical-scroll-proportion="-0.7037037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/My/View/Helper/Load.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="310" selection-end="310" vertical-scroll-proportion="0.36976048">
+        <state line="12" column="17" selection-start="225" selection-end="225" vertical-scroll-proportion="0.31736526">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/configs/application.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="41" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.16402878">
+        <state line="32" column="41" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.42589927">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/library/My/View/Helper/Navbar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="193" selection-end="193" vertical-scroll-proportion="-8.444445">
+        <state line="27" column="35" selection-start="784" selection-end="784" vertical-scroll-proportion="0.51197606">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/locales/en/Zend_Translate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="27" selection-start="1181" selection-end="1213" vertical-scroll-proportion="-20.518518">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/locales/pt/Zend_Translate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="25" selection-start="1224" selection-end="1224" vertical-scroll-proportion="-19.814816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/index/about.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="11" selection-start="26" selection-end="26" vertical-scroll-proportion="0.02733813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/index/about.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="6" selection-start="1689" selection-end="1689" vertical-scroll-proportion="0.8248503">
+          <folding>
+            <marker date="1383331359628" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/carousel.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="483" selection-end="543" vertical-scroll-proportion="0.28443113">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/forms/SignUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="70" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.6257485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="32" selection-start="236" selection-end="236" vertical-scroll-proportion="-0.46412215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="127" selection-start="624" selection-end="624" vertical-scroll-proportion="0.40610686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/jumbotron.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="82" selection-start="858" selection-end="858" vertical-scroll-proportion="0.4266467">
+        <state line="34" column="0" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.7129771">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="5" selection-start="2392" selection-end="2392" vertical-scroll-proportion="0.9236527">
           <folding />
         </state>
       </provider>

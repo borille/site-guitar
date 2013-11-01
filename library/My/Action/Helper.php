@@ -14,7 +14,7 @@ abstract class My_Action_Helper
 	 * Função que simplifica a chamada do Helper FlashMessenger
 	 *
 	 * @param string $msg
-	 * @param string $type success|error|notice|info
+	 * @param string $type success|error|warning|info
 	 */
 	public static function showMessage( $msg, $type = 'success' )
 	{

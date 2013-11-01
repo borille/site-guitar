@@ -37,7 +37,7 @@ class Default_IndexController extends Zend_Controller_Action
 
 	public function aboutAction()
 	{
-		My_Action_Helper::disableView( false, true, true );
+
 	}
 
 

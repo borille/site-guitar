@@ -1,4 +1,5 @@
 <?php
+$this->headTitle( 'GuitarPrime' );
 $this->setEncoding( 'utf-8' );
 $this->headMeta()->appendHttpEquiv( 'Content-Type', 'text/html;charset=ISO-8859-1' );
 $this->headMeta()->appendName( 'viewport', 'width=device-width, initial-scale=1.0' );
@@ -24,21 +25,38 @@ $this->javascriptHelper( $this->baseUrl() );
 	<?php echo $this->headTitle() ?>
 	<?php echo $this->headLink() ?>
 	<?php echo $this->headStyle() ?>
+	<link rel="shortcut icon" href="http://www.marketingmo.com/wp/wp-content/uploads/2009/05/gp-icon-orange-128px.png">
 </head>
 <body>
 
-<?php //echo $this->partial( 'layout/layout3/header.phtml' ); ?>
-<?php //echo $this->partial( 'layout/layout2/carousel.phtml' ); ?>
+<?php echo $this->partial( 'layout/layout3/header.phtml' ); ?>
+
+<?php
+if ( Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'index' && Zend_Controller_Front::getInstance()->getRequest()->getActionName() == 'index' ) {
+	echo $this->partial( 'layout/layout2/carousel.phtml' );
+}
+?>
+
 
 <div class="wrapper">
 	<div class="container">
+		<?php if ( isset( $this->title ) ) : ?>
+			<div class="page-header">
+				<h1>
+					<?php echo $this->title ?>
+					<?php if ( isset( $this->subtitle ) ) : ?>
+						<small><?php echo $this->subtitle ?></small>
+					<?php endif; ?>
+				</h1>
+			</div>
+		<?php endif; ?>
 		<?php echo $this->alertMessages(); ?>
 		<?php echo $this->layout()->content; ?>
 	</div>
 	<div class="push"><!--//--></div>
 </div>
 
-<?php //echo $this->partial( 'layout/layout3/footer.phtml' ); ?>
+<?php echo $this->partial( 'layout/layout3/footer.phtml' ); ?>
 
 
 <?php echo $this->headScript() ?>

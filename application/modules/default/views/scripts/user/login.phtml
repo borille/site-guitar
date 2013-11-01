@@ -1,3 +1,24 @@
-<h2 class="form-signin-heading"><?php echo $this->translate( 'login-message' ) ?></h2>
+<?php if ( !$this->isAjax ) { ?>
+	<?php $this->title = $this->translate( 'login' ); ?>
+	<?php $this->subtitle = $this->translate( 'subtitle' ); ?>
+<?php } else { ?>
+	<?php $this->form->setAttrib( 'style', 'width: 240px; padding: 0' ) ?>
+<?php } ?>
 
 <?php echo $this->form; ?>
+
+<?php if ( !$this->isAjax ) { ?>
+	<p class="text-center">
+		<strong>
+			<a href="<?php echo $this->url( array( 'controller' => 'user', 'action' => 'forgot-password' ), null, false ); ?>">
+				<?php echo $this->translate( 'forgot-password' ) ?>
+			</a>
+		</strong>
+		- <?php echo $this->translate( 'no-account' ) ?>
+		<strong>
+			<a href="<?php echo $this->url( array( 'controller' => 'user', 'action' => 'sign-up' ), null, false ); ?>">
+				<?php echo $this->translate( 'sign-up' ) ?>
+			</a>
+		</strong>
+	</p>
+<?php } ?>

@@ -7,7 +7,7 @@ class Default_Form_SignUp extends Zend_Form
 	{
 		$view = $this->getView();
 
-		$this->setAttrib( 'class', 'form-signup' );
+		$this->setAttrib( 'class', 'form' );
 
 		$userName = new Zend_Form_Element_Text( 'userName' );
 		$userName->setLabel( $view->translate( "username" ) )

@@ -1,1 +1,12 @@
+<?php $this->title = $this->translate( 'sign-up' ); ?>
+
 <?php echo $this->form; ?>
+
+<p class="text-center">
+	<?php echo $this->translate( 'yes-account' ) ?>
+	<strong>
+		<a href="<?php echo $this->url( array( 'controller' => 'user', 'action' => 'login' ), null, false ); ?>">
+			<?php echo $this->translate( 'login' ) ?>
+		</a>
+	</strong>
+</p>

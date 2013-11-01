@@ -7,7 +7,8 @@ class Default_Form_Login extends Zend_Form
 	{
 		$view = $this->getView();
 
-		$this->setAttrib( 'class', 'form-signin' );
+		$this->setAttrib( 'class', 'form' );
+		$this->setAction( $this->getView()->url( array( 'module' => 'default', 'controller' => 'user', 'action' => 'login' ), null, true ) );
 
 		$userMail = new Zend_Form_Element_Text( 'userMail' );
 		$userMail->setAttrib( 'placeholder', $view->translate( "mail" ) )

@@ -7,7 +7,7 @@ class Default_Form_Contact extends Zend_Form
 	{
 		$view = $this->getView();
 
-		$this->setAttrib( 'class', 'form-contact' );
+		$this->setAttrib( 'class', 'form' );
 
 		$name = new Zend_Form_Element_Text( 'name' );
 		$name->setLabel( $view->translate( "name" ) )

@@ -39,6 +39,9 @@
               <actionMethod actionName="login"/>
               <actionMethod actionName="forgotPassword"/>
             </controllerFile>
+            <controllerFile controllerName="Blog">
+              <actionMethod actionName="index"/>
+            </controllerFile>
           </controllersDirectory>
           <formsDirectory>
             <formFile formName="User"/>
@@ -79,6 +82,9 @@
               </viewControllerScriptsDirectory>
               <viewControllerScriptsDirectory forControllerName="User">
                 <viewScriptFile forActionName="forgotPassword"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Blog">
+                <viewScriptFile forActionName="index"/>
               </viewControllerScriptsDirectory>
             </viewScriptsDirectory>
             <viewHelpersDirectory/>

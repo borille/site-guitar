@@ -2,52 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c65830d-f463-4c69-852b-44371799a8f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/models/Admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/models/DbTable/Admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/forms/Login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/controllers/PackageController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/controllers/PackageController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/forms/User.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/controllers/UserController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/user/add.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout1/carousel.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout2/carousel.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/carousel.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/user/delete.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/user/edit.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout1/footer.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout2/footer.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/footer.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout1/header.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout2/header.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/header.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/package/index.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/user/index.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/package/index.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout1/jumbotron.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout2/jumbotron.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/jumbotron.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout1/layout.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout2/layout.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/layout.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/user/login.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout1/navbar.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout2/navbar.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/navbar.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.zfproject.xml" afterPath="$PROJECT_DIR$/.zfproject.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/My/Acl/Setup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/My/Controller/Plugin/Auth.php" afterPath="$PROJECT_DIR$/library/My/Controller/Plugin/Auth.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/Bootstrap.php" afterPath="$PROJECT_DIR$/application/Bootstrap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/admin/Bootstrap.php" afterPath="$PROJECT_DIR$/application/modules/admin/Bootstrap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/configs/application.ini" afterPath="$PROJECT_DIR$/application/configs/application.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="site-guitar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383523681210" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383564371495" ignored="false" />
     <file path="/dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383502346901" ignored="false" />
     <file path="/ErrorController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381864858799" ignored="false" />
-    <file path="/application.ini" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383499705818" ignored="false" />
-    <file path="/Bootstrap.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381865944917" ignored="false" />
+    <file path="/application.ini" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383565018584" ignored="false" />
+    <file path="/Bootstrap.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383564790369" ignored="false" />
     <file path="/index.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383332948773" ignored="false" />
     <file path="/layout.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383332668427" ignored="false" />
     <file path="/header.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383162398766" ignored="false" />
@@ -126,6 +95,8 @@
     <file path="/a.sql" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383499059363" ignored="false" />
     <file path="/dummy.sql" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383499031847" ignored="false" />
     <file path="/Admin.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383502568304" ignored="false" />
+    <file path="/Setup.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383565226377" ignored="false" />
+    <file path="/Auth.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383565114966" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,17 +120,7 @@
     <favorites_list name="site-guitar" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Login.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/modules/admin/forms/Login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="43" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -203,16 +164,9 @@
       <MyDateState />
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout1/footer.phtml" />
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml" />
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml" />
-        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/layout.phtml" />
         <option value="$PROJECT_DIR$/application/modules/admin/views/scripts/user/login.phtml" />
@@ -225,6 +179,10 @@
         <option value="$PROJECT_DIR$/application/modules/admin/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/library/My/Application/Resource/Log.php" />
         <option value="$PROJECT_DIR$/application/configs/application.ini" />
+        <option value="$PROJECT_DIR$/library/My/Controller/Plugin/Auth.php" />
+        <option value="$PROJECT_DIR$/library/My/Acl/Setup.php" />
+        <option value="$PROJECT_DIR$/application/Bootstrap.php" />
+        <option value="$PROJECT_DIR$/application/modules/admin/Bootstrap.php" />
       </list>
     </option>
   </component>
@@ -239,10 +197,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="22" />
-    <option name="width" value="1276" />
-    <option name="height" value="778" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -298,6 +256,130 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="My" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Acl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -317,166 +399,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DbTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,122 +421,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DbTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-guitar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -647,17 +453,35 @@
     <property name="options.lastSelected" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/data/database" />
     <property name="FullScreen" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="4d6d87d0-603a-42f0-ab8f-cb9b69740b52">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="6bfc77bf-8109-4d5a-8109-a43ec73afdd7">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\borille\site-guitar\library\My\Acl" />
       <recent name="$PROJECT_DIR$/application/modules/admin/views/scripts" />
       <recent name="C:\wamp\www\borille\site-guitar\library\My\View\Helper" />
       <recent name="C:\wamp\www\borille\site-guitar\public\css" />
       <recent name="C:\wamp\www\borille\site-guitar\application\modules\default\views\scripts\layout" />
-      <recent name="C:\wamp\www\borille\site-guitar\application\modules\default\views\scripts\layout\layout2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\borille\site-guitar\application\modules\default\views\scripts\layout\layout1" />
@@ -727,28 +551,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1276" height="778" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21707317" sideWeight="0.6515151" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287879" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21707317" sideWeight="0.6515151" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27235773" sideWeight="0.67121214" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.241033" sideWeight="0.67121214" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34848484" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34848484" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -777,7 +601,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -793,7 +617,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="mysql connector" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -816,114 +640,94 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="6" selection-start="1699" selection-end="1699" vertical-scroll-proportion="1.1780822">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/forms/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="5" selection-start="54" selection-end="1004" vertical-scroll-proportion="0.7123288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="31" selection-end="755" vertical-scroll-proportion="0.8015873">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/models/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="809" selection-end="809" vertical-scroll-proportion="1.9047619">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/models/DbTable/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="39" selection-end="417" vertical-scroll-proportion="0.07936508">
-          <folding />
-        </state>
+        <state line="2" column="32" selection-start="39" selection-end="417" vertical-scroll-proportion="0.07936508" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/admin/models/DbTable/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="26" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5555556">
-          <folding />
-        </state>
+        <state line="14" column="26" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5555556" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="34" selection-start="436" selection-end="1042" vertical-scroll-proportion="0.77983195">
-          <folding />
-        </state>
+        <state line="45" column="34" selection-start="436" selection-end="1042" vertical-scroll-proportion="0.77983195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/admin/views/scripts/user/login.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="30" selection-start="0" selection-end="102" vertical-scroll-proportion="0.024671054">
-          <folding />
-        </state>
+        <state line="1" column="30" selection-start="0" selection-end="102" vertical-scroll-proportion="0.024671054" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/library/My/Application/Resource/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="60" selection-start="2065" selection-end="2065" vertical-scroll-proportion="1.3897281" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/My/Application/Resource/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="320" selection-end="320" vertical-scroll-proportion="0.13595167" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/forms/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="48" selection-start="638" selection-end="638" vertical-scroll-proportion="0.872093" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/views/scripts/user/add.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="28" selection-start="60" selection-end="60" vertical-scroll-proportion="0.04360465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/forms/SignUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="55" selection-end="1507" vertical-scroll-proportion="0.88081396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/forms/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="43" selection-start="205" selection-end="205" vertical-scroll-proportion="0.29007635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="248" selection-end="248" vertical-scroll-proportion="0.31287426">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/Bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="72" selection-end="248" vertical-scroll-proportion="0.08532934">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/My/Controller/Plugin/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="56" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.8293413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/My/Acl/Setup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="5" selection-start="332" selection-end="332" vertical-scroll-proportion="0.36077845">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/configs/application.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="7" selection-start="1380" selection-end="1380" vertical-scroll-proportion="0.3722826">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="60" selection-start="2065" selection-end="2065" vertical-scroll-proportion="1.3897281">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/My/Application/Resource/Log.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="320" selection-end="320" vertical-scroll-proportion="0.13595167">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/forms/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="638" selection-end="638" vertical-scroll-proportion="0.872093">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/views/scripts/user/add.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="28" selection-start="60" selection-end="60" vertical-scroll-proportion="0.04360465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/forms/SignUp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="55" selection-end="1507" vertical-scroll-proportion="0.88081396">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/forms/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+        <state line="29" column="0" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.37122303">
           <folding />
         </state>
       </provider>

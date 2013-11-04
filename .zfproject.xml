@@ -58,6 +58,7 @@
             <modelFile modelName="User"/>
             <dbTableDirectory>
               <dbTableFile dbTableName="User"/>
+              <dbTableFile dbTableName="Blog"/>
             </dbTableDirectory>
           </modelsDirectory>
           <viewsDirectory>

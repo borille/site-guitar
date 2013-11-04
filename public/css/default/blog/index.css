@@ -1,0 +1,14 @@
+#blog-body {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #666;
+}
+
+p.meta {
+    font-style: italic;
+    color: #808080;
+}
+
+p.tags {
+    line-height: 30px;
+}

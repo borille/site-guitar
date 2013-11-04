@@ -1,0 +1,44 @@
+<?php
+$this->setEncoding( 'utf-8' );
+$this->headMeta()->appendHttpEquiv( 'Content-Type', 'text/html;charset=ISO-8859-1' );
+$this->headMeta()->appendName( 'viewport', 'width=device-width, initial-scale=1.0' );
+
+//incluir css
+$this->headLink()->appendStylesheet( $this->baseUrl() . '/bootstrap/dist/css/bootstrap.min.css' );
+$this->headLink()->appendStylesheet( $this->baseUrl() . '/css/layout1.css' );
+$this->headLink()->appendStylesheet( $this->baseUrl() . '/css/footer.css' );
+$this->cssHelper( $this->baseUrl() );
+
+//incluir js
+$this->headScript()->appendFile( $this->baseUrl() . '/js/jquery-1.10.2.min.js' );
+$this->headScript()->appendFile( $this->baseUrl() . '/bootstrap/dist/js/bootstrap.min.js' );
+$this->javascriptHelper( $this->baseUrl() );
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<?php echo $this->headMeta() ?>
+	<?php echo $this->headTitle() ?>
+	<?php echo $this->headLink() ?>
+	<?php echo $this->headStyle() ?>
+</head>
+<body>
+
+<?php echo $this->partial( 'layout/layout1/header.phtml' ); ?>
+<?php echo $this->partial( 'layout/layout1/jumbotron.phtml' ); ?>
+
+<div class="wrapper">
+	<div class="container">
+		<?php echo $this->alertMessages(); ?>
+		<?php echo $this->layout()->content; ?>
+	</div>
+	<div class="push"><!--//--></div>
+</div>
+
+<?php echo $this->partial( 'layout/layout1/footer.phtml' ); ?>
+
+
+<?php echo $this->headScript() ?>
+</body>
+</html>

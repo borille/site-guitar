@@ -1,0 +1,53 @@
+<?php
+$this->headTitle( 'GuitarPrime' );
+$this->setEncoding( 'utf-8' );
+$this->headMeta()->appendHttpEquiv( 'Content-Type', 'text/html;charset=ISO-8859-1' );
+$this->headMeta()->appendName( 'viewport', 'width=device-width, initial-scale=1.0' );
+
+//incluir css
+$this->headLink()->appendStylesheet( $this->baseUrl() . '/bootstrap/dist/css/bootstrap.min.css' );
+$this->headLink()->appendStylesheet( $this->baseUrl() . '/css/layout3.css' );
+$this->headLink()->appendStylesheet( $this->baseUrl() . '/css/footer.css' );
+$this->headLink()->appendStylesheet( $this->baseUrl() . '/css/carousel.css' );
+$this->cssHelper( $this->baseUrl() );
+
+//incluir js
+$this->headScript()->prependFile( $this->baseUrl() . '/js/default.js' );
+$this->headScript()->prependFile( $this->baseUrl() . '/bootstrap/dist/js/bootstrap.min.js' );
+$this->headScript()->prependFile( $this->baseUrl() . '/js/jquery-1.10.2.min.js' );
+$this->javascriptHelper( $this->baseUrl() );
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<?php echo $this->headMeta() ?>
+	<?php echo $this->headTitle() ?>
+	<?php echo $this->headLink() ?>
+	<?php echo $this->headStyle() ?>
+	<link rel="shortcut icon" href="http://www.marketingmo.com/wp/wp-content/uploads/2009/05/gp-icon-orange-128px.png">
+</head>
+<body>
+
+
+<div class="wrapper">
+	<div class="container">
+		<?php if ( isset( $this->title ) ) : ?>
+			<div class="page-header">
+				<h1>
+					<?php echo $this->title ?>
+					<?php if ( isset( $this->subtitle ) ) : ?>
+						<small><?php echo $this->subtitle ?></small>
+					<?php endif; ?>
+				</h1>
+			</div>
+		<?php endif; ?>
+		<?php echo $this->alertMessages(); ?>
+		<?php echo $this->layout()->content; ?>
+	</div>
+	<div class="push"><!--//--></div>
+</div>
+
+<?php echo $this->headScript() ?>
+</body>
+</html>

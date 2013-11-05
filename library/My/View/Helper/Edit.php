@@ -16,7 +16,7 @@ class My_View_Helper_Edit extends Zend_View_Helper_Abstract
 	{
 		//verifica se foi passado algum nome de controller, senao tenta pegar o atual
 		if ( !$controller ) {
-			$controller = $this->view->controller;
+			$controller = Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
 		}
 
 		$urlParams = array(
@@ -32,12 +32,7 @@ class My_View_Helper_Edit extends Zend_View_Helper_Abstract
 		}
 
 		$output = '<a href="' . $this->view->url( array_merge( $urlParams, $params ), null, TRUE ) . '" title="' . $description . '">';
-
-		if ( defined( 'TWITTER_BOOTSTRAP' ) ) { // Verifica se o layout usa bootstrap
-			$output .= '<i class="icon-pencil"></i>';
-		} else {
-			$output .= '<img style="vertical-align: bottom; padding: 0px 5px 0px 5px;" width="18" src="' . INCLUDE_PATH . '/img/edit.png"/>';
-		}
+		$output .= '<i class="glyphicon glyphicon-pencil"></i>';
 
 		$output .= $text;
 		$output .= '</a>';

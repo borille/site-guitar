@@ -25,3 +25,32 @@ function loadContent(url, element) {
         $("#" + element).html(data);
     }, "html");
 }
+
+//------------------------------------------------------------------------------
+function confirmDeleteBs(redirectUrl) {
+    divTag = $('<div/>');
+
+    divTag.addClass('modal');
+    divTag.addClass('hide');
+    divTag.addClass('fade');
+
+    divTag.html('<div class="modal-dialog">\
+            <div class="modal-content">\
+                <div class="modal-header">\
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>\
+                    <h3>Confirmar Exclusão</h3>\
+                </div>\
+                <div class="modal-body">\
+                    <p style="font-size:14px">Essa operação não poderá ser desfeita!</p>\
+                </div>\
+                <div class="modal-footer">\
+                    <a class="btn" href="' + redirectUrl + '">Confirmar</a>\
+                    <a data-dismiss="modal" class="btn btn-primary">Cancelar</a>\
+                </div>\
+            </div>\
+        </div>');
+
+    divTag.modal();
+}
+
+//------------------------------------------------------------------------------

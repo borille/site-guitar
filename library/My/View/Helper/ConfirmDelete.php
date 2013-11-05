@@ -7,7 +7,7 @@ class My_View_Helper_ConfirmDelete extends Zend_View_Helper_Abstract
 	{
 		//verifica se foi passado algum nome de controller, senao tenta pegar o atual
 		if ( !$controller ) {
-			$controller = $this->view->controller;
+			$controller = Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
 		}
 
 		$urlParams = array(
@@ -22,20 +22,10 @@ class My_View_Helper_ConfirmDelete extends Zend_View_Helper_Abstract
 			);
 		}
 
-		if ( defined( 'TWITTER_BOOTSTRAP' ) ) { // Verifica se o layout usa bootstrap
-
-			$output = "<a href='#' onClick='confirmDeleteBs(\"" . $this->view->url( array_merge( $urlParams, $params ), null, TRUE ) . "\")' title='" . $description . "'>";
-			$output .= '<i class="icon-trash"></i>';
-			$output .= $text;
-			$output .= '</a>';
-
-		} else {
-
-			$output = "<a href='#' onClick='confirmDelete(\"" . $this->view->url( array_merge( $urlParams, $params ), null, TRUE ) . "\")' title='" . $description . "'>";
-			$output .= '<img style="vertical-align: bottom; padding: 0px 5px 0px 5px;" width="18" src="' . INCLUDE_PATH . '/img/delete.png"/> ';
-			$output .= $text;
-			$output .= '</a>';
-		}
+		$output = "<a href='#' onClick='confirmDeleteBs(\"" . $this->view->url( array_merge( $urlParams, $params ), null, TRUE ) . "\")' title='" . $description . "'>";
+		$output .= '<i class="glyphicon glyphicon-trash"></i>';
+		$output .= $text;
+		$output .= '</a>';
 
 		return $output;
 	}

@@ -28,7 +28,7 @@ class My_View_Helper_Voltar extends Zend_View_Helper_Abstract
 		if ( defined( 'TWITTER_BOOTSTRAP' ) ) { // Verifica se o layout usa bootstrap
 
 			$output = "<a href='$url' title='Página Anterior'>";
-			$output .= '<i class="icon-arrow-left"></i> ';
+			$output .= '<i class="glyphicon glyphicon-arrow-left"></i> ';
 			$output .= 'Voltar</a>';
 
 		} else {

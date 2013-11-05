@@ -1,79 +1,45 @@
-<?php $this->title = "Blog"; ?>
+<?php
+$this->title = "Blog";
+$this->subtitle = "guitarprime";
+
+//var_dump($this->data);die;
+?>
 
 <div class="row">
 	<div class="col-md-9">
-		<article>
-			<div class="page-header">
-				<h3 id="grid"><a href="#">Grid system</a></h3>
-			</div>
-			<p class="meta">Posted
-				<time datetime="2012-07-24" pubdate="">July 24, 2012</time>
-				by <a href="http://320press.com/wpbs/author/cbarnes/" title="Posts by Chris Barnes" rel="author">Chris
-					Barnes</a> <span class="amp">&amp;</span> filed under <a
-					href="http://320press.com/wpbs/category/releases/" title="View all posts in Releases"
-					rel="category tag">Releases</a>.
-			</p>
-			<p>
-				We make the WordPress Bootstrap CSS plugin that your referred to earlier, on Host Like Toast.</br>
-				This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress
-				shortcodes to implement some of the bootstrap features.</br>
-				You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes
-				easily.
-				Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter
-				Bootstrap
-				2.0.</br>
-				We make the WordPress Bootstrap CSS plugin that your referred to earlier, on Host Like Toast.</br>
-				This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress
-				shortcodes to implement some of the bootstrap features.</br>
-				You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes
-				easily.
-				Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter
-				Bootstrap
-				2.0.</br>
-			</p>
+		<?php foreach ( $this->data as $row ): ?>
+			<article>
+				<div class="page-header">
+					<h3 id="grid">
+						<a href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'view', 'id' => $row['id'] ), null, true ); ?>">
+							<?php echo $row['title'] ?>
+						</a>
+					</h3>
+				</div>
+				<p class="meta">Posted
+					<time datetime="2012-07-24" pubdate=""><?php echo $row['date'] ?></time>
+					by <a
+						href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'author', 'name' => $row['author'] ), null, true ); ?>"
+						title="Posts by <?php echo $row['author'] ?>" rel="author">
+						<?php echo $row['author'] ?>
+					</a> <span class="amp">&amp;</span> filed under <a
+						href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'category', 'name' => $row['category'] ), null, true ); ?>"
+						title="View all posts in <?php echo $row['category'] ?>"
+						rel="category tag"><?php echo $row['category'] ?></a>.
+				</p>
+				<p>
+					<?php echo $row['body'] ?>
+				</p>
 
-			<p class="tags">
-				<span class="tags-title">Tags:</span>
-				<a href="#" rel="tag" class="label label-default">bootstrap</a>
-				<a href="#" rel="tag" class="label label-default">twitter</a>
-			</p>
-		</article>
-		<article>
-			<div class="page-header">
-				<h3 id="grid">Grid system</h3>
-			</div>
-			<p class="meta">Posted
-				<time datetime="2012-07-24" pubdate="">July 24, 2012</time>
-				by <a href="http://320press.com/wpbs/author/cbarnes/" title="Posts by Chris Barnes" rel="author">Chris
-					Barnes</a> <span class="amp">&amp;</span> filed under <a
-					href="http://320press.com/wpbs/category/releases/" title="View all posts in Releases"
-					rel="category tag">Releases</a>.
-			</p>
-			<p>
-				We make the WordPress Bootstrap CSS plugin that your referred to earlier, on Host Like Toast.</br>
-				This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress
-				shortcodes to implement some of the bootstrap features.</br>
-				You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes
-				easily.
-				Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter
-				Bootstrap
-				2.0.</br>
-				We make the WordPress Bootstrap CSS plugin that your referred to earlier, on Host Like Toast.</br>
-				This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress
-				shortcodes to implement some of the bootstrap features.</br>
-				You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes
-				easily.
-				Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter
-				Bootstrap
-				2.0.</br>
-			</p>
-
-			<p class="tags">
-				<span class="tags-title">Tags:</span>
-				<a href="#" rel="tag" class="label label-default">bootstrap</a>
-				<a href="#" rel="tag" class="label label-default">twitter</a>
-			</p>
-		</article>
+				<p class="tags">
+					<span class="tags-title">Tags:</span>
+					<?php foreach ( $row['tag'] as $tag ): ?>
+						<a href="<?php echo $tag['url'] ?>" rel="tag"
+						   class="label label-default"><?php echo $tag['name'] ?></a>
+					<?php endforeach; ?>
+				</p>
+			</article>
+		<?php endforeach; ?>
 	</div>
 	<div class="col-md-3">
 		content

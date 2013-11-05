@@ -7,7 +7,7 @@ class My_View_Helper_AddLinkHelper extends Zend_View_Helper_Abstract
 	{
 		//verifica se foi passado algum nome de controller, senao tenta pegar o atual
 		if ( !$controller ) {
-			$controller = $this->view->controller;
+			$controller = Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
 		}
 
 		$module = Zend_Controller_Front::getInstance()->getRequest()->getModuleName();
@@ -21,7 +21,7 @@ class My_View_Helper_AddLinkHelper extends Zend_View_Helper_Abstract
 		if ( defined( 'TWITTER_BOOTSTRAP' ) ) // Verifica se o layout usa bootstrap
 		{
 			$output = $link;
-			$output .= '<i class="icon-plus"></i> ';
+			$output .= '<i class="glyphicon glyphicon-plus"></i> ';
 			$output .= $text;
 			$output .= '</a>';
 		} else {

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 01, 2013 at 07:11 PM
+-- Generation Time: Nov 05, 2013 at 07:34 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.3.13
 
@@ -19,6 +19,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `guitarprime`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE IF NOT EXISTS `admin` (
+  `adminId` int(11) NOT NULL AUTO_INCREMENT,
+  `adminName` varchar(50) NOT NULL,
+  `adminPassword` varchar(32) NOT NULL,
+  PRIMARY KEY (`adminId`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`adminId`, `adminName`, `adminPassword`) VALUES
+(1, 'borille', '58e5c7b9fba0532e36e5cd4740e1f4c5');
 
 -- --------------------------------------------------------
 

@@ -3,19 +3,19 @@
 class Admin_Model_DbTable_Admin extends My_Db_Table_Abstract
 {
 
-    public function init()
-    {
-        parent::configDbTable(NULL, 'admin', 'adminId');
-    }
+	public function init()
+	{
+		parent::configDbTable( NULL, 'admin', 'adminId' );
+	}
 
-    public function validateUser($user, $password)
-    {
-        $select = $this->getSelect(array('adminId', 'adminUser'));
-        $select->where('adminUser = ?', $user)
-            ->where('adminPassword = ?', md5($password));
+	public function validateUser( $user, $password )
+	{
+		$select = $this->getSelect( array( 'adminId', 'adminName' ) );
+		$select->where( 'adminName = ?', $user )
+			->where( 'adminPassword = ?', md5( $password ) );
 
-        return $this->returnOne($select);
-    }
+		return $this->returnOne( $select );
+	}
 
 }
 

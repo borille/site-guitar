@@ -23,9 +23,9 @@ class My_View_Helper_AlertMessages extends Zend_View_Helper_Abstract
 				}
 			}
 
-			if ( $flashMessenger->setNamespace( 'error' )->hasMessages() ) {
+			if ( $flashMessenger->setNamespace( 'danger' )->hasMessages() ) {
 				foreach ( $flashMessenger->getMessages() as $msg ) {
-					$output .= '<div class="alert alert-error fade in">';
+					$output .= '<div class="alert alert-danger fade in">';
 					$output .= $closeButton;
 					$output .= '<b>' . $msg . '</b>';
 					$output .= '</div>';

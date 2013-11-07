@@ -1,90 +1,38 @@
 <?php
+$module = Zend_Controller_Front::getInstance()->getRequest()->getModuleName();
 $controller = Zend_Controller_Front::getInstance()->getRequest()->getControllerName();
 $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 ?>
 
 
-<div class="navbar navbar-inverse navbar-static-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="<?php echo $this->Url( array( 'controller' => 'index' ), null, true ) ?>">GuitarPrime</a>
+			<a class="navbar-brand" href="<?php echo $this->Url( array( 'module' => 'admin' ), null, true ) ?>">
+				GuitarPrime
+			</a>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li <?php echo ( $controller == 'index' && $action == 'index' ) ? 'class="active"' : '' ?>>
-					<a href="<?php echo $this->Url( array( 'controller' => 'index' ), null, true ) ?>">Home</a>
-				</li>
-                <li <?php echo ( $controller == 'blog' && $action == 'index' ) ? 'class="active"' : '' ?>>
-					<a href="<?php echo $this->Url( array( 'controller' => 'blog', 'action' => 'index' ), null, true ) ?>"><?php echo $this->translate( 'blog' ) ?></a>
-				</li>
-				<li <?php echo ( $controller == 'index' && $action == 'about' ) ? 'class="active"' : '' ?>>
-					<a href="<?php echo $this->Url( array( 'controller' => 'index', 'action' => 'about' ), null, true ) ?>"><?php echo $this->translate( 'about' ) ?></a>
-				</li>
-				<li <?php echo ( $controller == 'index' && $action == 'contact' ) ? 'class="active"' : '' ?>>
-					<a href="<?php echo $this->Url( array( 'controller' => 'index', 'action' => 'contact' ), null, true ) ?>"><?php echo $this->translate( 'contact' ) ?></a>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li class="divider"></li>
-						<li class="dropdown-header">Nav header</li>
-						<li><a href="#">Separated link</a></li>
-						<li><a href="#">One more separated link</a></li>
-					</ul>
-				</li>
-			</ul>
-
-			<div class="col-sm-4 col-md-4 pull-right">
-				<form class="navbar-form" role="search">
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="<?php echo $this->translate( 'search' ) ?>"
-						       name="txt-search">
-
-						<div class="input-group-btn">
-							<button class="btn btn-info" type="submit">
-								<i class="glyphicon glyphicon-search"></i>
-							</button>
-						</div>
-					</div>
-				</form>
-			</div>
-
-			<ul class="nav navbar-nav navbar-right">
 				<?php if ( Zend_Auth::getInstance()->hasIdentity() ) { ?>
+					<li <?php echo ( $module == 'admin' && $controller == 'user' ) ? 'class="active"' : '' ?>>
+						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user' ), null, true ); ?>">
+							user
+						</a>
+					</li>
+					<li <?php echo ( $module == 'admin' && $controller == 'language' ) ? 'class="active"' : '' ?>>
+						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'language' ), null, true ); ?>">
+							language
+						</a>
+					</li>
+					<li <?php echo ( $module == 'admin' && $controller == 'instrument' ) ? 'class="active"' : '' ?>>
+						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'instrument' ), null, true ); ?>">
+							instrument
+						</a>
+					</li>
 					<li>
-						<a href="<?php echo $this->url( array( 'controller' => 'user', 'action' => 'logout' ), null, true ); ?>">
-							<?php echo $this->translate( 'logout' ) ?>
-						</a>
-					</li>
-					<li class="dropdown<?php echo ( $controller == 'user' && $action == 'index' ) ? ' active' : '' ?>">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<?php echo $this->translate( 'my-account' ) ?> <b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</li>
-				<?php } else { ?>
-					<li <?php echo ( $controller == 'user' && $action == 'login' ) ? 'class="active"' : '' ?>>
-						<a href="#" class="fade right in" id="show-login" data-toggle="popover" data-placement="bottom">
-							<?php echo $this->translate( 'login' ) ?>
-						</a>
-					</li>
-					<li <?php echo ( $controller == 'user' && $action == 'sign-up' ) ? 'class="active"' : '' ?>>
-						<a href="<?php echo $this->url( array( 'controller' => 'user', 'action' => 'sign-up' ), null, true ); ?>">
-							<?php echo $this->translate( 'sign-up' ) ?>
+						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user', 'action' => 'logout' ), null, true ); ?>">
+							logout
 						</a>
 					</li>
 				<?php } ?>

@@ -105,7 +105,7 @@ class My_Controller_Action extends Zend_Controller_Action
 					My_Action_Helper::showMessage( 'Salvo com Sucesso!' );
 					My_Action_Helper::redirect( $this->getRequest()->getControllerName() );
 				} else {
-					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'error' );
+					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'danger' );
 					My_Action_Helper::redirect( $this->getRequest()->getControllerName(), $this->getRequest()->getActionName() );
 				}
 			} else {
@@ -123,7 +123,7 @@ class My_Controller_Action extends Zend_Controller_Action
 					My_Action_Helper::showMessage( 'Salvo com Sucesso!' );
 					My_Action_Helper::redirect( $this->getRequest()->getControllerName() );
 				} else {
-					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'error' );
+					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'danger' );
 					My_Action_Helper::redirect( $this->getRequest()->getControllerName(), $this->getRequest()->getActionName(), array( 'id' => $this->getRequest()->getParam( 'id' ) ) );
 				}
 			} else {
@@ -141,7 +141,7 @@ class My_Controller_Action extends Zend_Controller_Action
 			if ( $this->getTable()->delete( $this->getRequest()->getParam( 'id' ) ) ) {
 				My_Action_Helper::showMessage( 'Excluído com Sucesso!' );
 			} else {
-				My_Action_Helper::showMessage( 'Erro ao excluir!', 'error' );
+				My_Action_Helper::showMessage( 'Erro ao excluir!', 'danger' );
 			}
 		}
 		My_Action_Helper::redirect( $this->getRequest()->getControllerName() );

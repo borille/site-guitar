@@ -22,7 +22,7 @@ class Admin_UserController extends My_Controller_Action
 			if ( $form->isValid( $this->getRequest()->getPost() ) ) {
 
 				$tableUser = new Admin_Model_DbTable_Admin();
-				$validUser = $tableUser->validateUser( $form->getValue( 'adminUser' ), $form->getValue( 'adminPassword' ) );
+				$validUser = $tableUser->validateUser( $form->getValue( 'adminName' ), $form->getValue( 'adminPassword' ) );
 
 				if ( $validUser ) {
 					$adminModel = new Admin_Model_Admin( $validUser );
@@ -31,7 +31,7 @@ class Admin_UserController extends My_Controller_Action
 					My_Action_Helper::showMessage( $this->view->translate( "login-success" ) );
 					My_Action_Helper::redirect( 'index' );
 				} else {
-					My_Action_Helper::showMessage( $this->view->translate( "login-error" ), 'error' );
+					My_Action_Helper::showMessage( $this->view->translate( "login-error" ), 'danger' );
 					My_Action_Helper::redirect( 'user', 'login' );
 				}
 			} else {
@@ -59,7 +59,7 @@ class Admin_UserController extends My_Controller_Action
 					My_Action_Helper::showMessage( 'Salvo com Sucesso!' );
 					My_Action_Helper::redirect( $this->getRequest()->getControllerName() );
 				} else {
-					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'error' );
+					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'danger' );
 					My_Action_Helper::redirect( $this->getRequest()->getControllerName(), $this->getRequest()->getActionName() );
 				}
 			} else {
@@ -82,7 +82,7 @@ class Admin_UserController extends My_Controller_Action
 					My_Action_Helper::showMessage( 'Salvo com Sucesso!' );
 					My_Action_Helper::redirect( $this->getRequest()->getControllerName() );
 				} else {
-					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'error' );
+					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'danger' );
 					My_Action_Helper::redirect( $this->getRequest()->getControllerName(), $this->getRequest()->getActionName(), array( 'id' => $this->getRequest()->getParam( 'id' ) ) );
 				}
 			} else {
@@ -100,6 +100,11 @@ class Admin_UserController extends My_Controller_Action
 		parent::deleteAction();
 	}
 
+	public function logoutAction()
+	{
+		Zend_Auth::getInstance()->clearIdentity();
+		My_Action_Helper::redirect( 'index' );
+	}
 
 }
 

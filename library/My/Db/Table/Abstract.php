@@ -422,7 +422,9 @@ abstract class My_Db_Table_Abstract extends Zend_Db_Table_Abstract
 			}
 
 			//insere no banco
-			$this->_lastInsertedId = parent::insert( $data );
+			parent::insert( $data );
+
+			$this->_lastInsertedId = $this->getAdapter()->lastInsertId();
 
 			//commit
 			if ( $transaction ) {

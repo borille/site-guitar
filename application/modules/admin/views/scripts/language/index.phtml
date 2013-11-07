@@ -1,0 +1,21 @@
+<?php $this->title = 'Language' ?>
+
+<p class="pull-right"><?php echo $this->AddLinkHelper(); ?></p>
+
+<table class="table">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Options</th>
+	</tr>
+	<?php foreach ( $this->data as $row ): ?>
+		<tr>
+			<td><?php echo $row['languageId'] ?></td>
+			<td><?php echo $row['languageName'] ?></td>
+			<td>
+				<?php echo $this->Edit( $row['languageId'] ) ?>
+				<?php echo $this->ConfirmDelete( $row['languageId'] ) ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+</table>

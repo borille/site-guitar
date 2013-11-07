@@ -1,16 +1,12 @@
 <?php
 
-class Admin_UserController extends Zend_Controller_Action
+class Admin_UserController extends My_Controller_Action
 {
 
 	public function init()
 	{
-		/* Initialize action controller here */
-	}
-
-	public function indexAction()
-	{
-		$this->view->data = My_Action_Helper::paginator( Admin_Model_DbTable_Admin::getInstance()->getSelect(), $this->getRequest()->getParam( 'page', 1 ) );
+		$this->setFormName( 'Admin_Form_User' );
+		$this->setTableName( 'Admin_Model_DbTable_Admin' );
 	}
 
 	public function loginAction()
@@ -46,64 +42,62 @@ class Admin_UserController extends Zend_Controller_Action
 		$this->view->form = $form;
 	}
 
+	public function indexAction()
+	{
+		parent::indexAction();
+	}
+
 	public function addAction()
 	{
-		$form = new Admin_Form_User();
-
 		if ( $this->getRequest()->isPost() ) {
-			if ( $form->isValid( $this->getRequest()->getPost() ) ) {
+			if ( $this->getForm()->isValid( $this->getRequest()->getPost() ) ) {
 
-				$form->getElement( 'adminPassword' )->setValue( md5( $form->getValue( 'adminPassword' ) ) );
-				$form->removeElement( 'passConfirm' );
+				$this->getForm()->getElement( 'adminPassword' )->setValue( md5( $this->getForm()->getValue( 'adminPassword' ) ) );
+				$this->getForm()->removeElement( 'passConfirm' );
 
-				$tableAdmin = new Admin_Model_DbTable_Admin();
-
-				if ( $tableAdmin->insert( $form->getValues() ) ) {
+				if ( $this->getTable()->insert( $this->getForm()->getValues() ) ) {
 					My_Action_Helper::showMessage( 'Salvo com Sucesso!' );
-					My_Action_Helper::redirect( 'index' );
+					My_Action_Helper::redirect( $this->getRequest()->getControllerName() );
 				} else {
 					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'error' );
-					My_Action_Helper::redirect( 'user', 'add' );
+					My_Action_Helper::redirect( $this->getRequest()->getControllerName(), $this->getRequest()->getActionName() );
 				}
 			} else {
-				$form->populate( $this->getRequest()->getPost() );
+				$this->getForm()->populate( $this->getRequest()->getPost() );
 			}
 		}
 
-		$this->view->form = $form;
+		$this->view->form = $this->getForm();
 	}
 
 	public function editAction()
 	{
-		$form = new Admin_Form_User();
-		$tableAdmin = new Admin_Model_DbTable_Admin();
-
 		if ( $this->getRequest()->isPost() ) {
-			if ( $form->isValid( $this->getRequest()->getPost() ) ) {
+			if ( $this->getForm()->isValid( $this->getRequest()->getPost() ) ) {
 
-				$form->getElement( 'adminPassword' )->setValue( md5( $form->getValue( 'adminPassword' ) ) );
-				$form->removeElement( 'passConfirm' );
+				$this->getForm()->getElement( 'adminPassword' )->setValue( md5( $this->getForm()->getValue( 'adminPassword' ) ) );
+				$this->getForm()->removeElement( 'passConfirm' );
 
-				if ( $tableAdmin->update( $form->getValues() ) ) {
+				if ( $this->getTable()->update( $this->getForm()->getValues() ) ) {
 					My_Action_Helper::showMessage( 'Salvo com Sucesso!' );
-					My_Action_Helper::redirect( 'index' );
+					My_Action_Helper::redirect( $this->getRequest()->getControllerName() );
 				} else {
 					My_Action_Helper::showMessage( 'Erro ao Salvar!', 'error' );
-					My_Action_Helper::redirect( 'user', 'add' );
+					My_Action_Helper::redirect( $this->getRequest()->getControllerName(), $this->getRequest()->getActionName(), array( 'id' => $this->getRequest()->getParam( 'id' ) ) );
 				}
 			} else {
-				$form->populate( $this->getRequest()->getPost() );
+				$this->getForm()->populate( $this->getRequest()->getPost() );
 			}
 		} else {
-			$form->populate( $tableAdmin->getId( $this->getRequest()->getParam( 'id' ) ) );
+			$this->getForm()->populate( $this->getTable()->getId( $this->getRequest()->getParam( 'id' ) ) );
 		}
 
-		$this->view->form = $form;
+		$this->view->form = $this->getForm();
 	}
 
 	public function deleteAction()
 	{
-		// action body
+		parent::deleteAction();
 	}
 
 

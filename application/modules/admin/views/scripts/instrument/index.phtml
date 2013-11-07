@@ -1,0 +1,21 @@
+<?php $this->title = 'Instrument' ?>
+
+<p class="pull-right"><?php echo $this->AddLinkHelper(); ?></p>
+
+<table class="table">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Options</th>
+	</tr>
+	<?php foreach ( $this->data as $row ): ?>
+		<tr>
+			<td><?php echo $row['instrumentId'] ?></td>
+			<td><?php echo $row['instrumentName'] ?></td>
+			<td>
+				<?php echo $this->Edit( $row['instrumentId'] ) ?>
+				<?php echo $this->ConfirmDelete( $row['instrumentId'] ) ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+</table>

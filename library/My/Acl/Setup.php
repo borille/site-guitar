@@ -38,6 +38,8 @@ class My_Acl_Setup implements My_Acl_Interface
 			'admin:package',
 			'admin:language',
 			'admin:instrument',
+			'admin:category',
+			'admin:sub-category',
 		);
 
 		$this->default = array(

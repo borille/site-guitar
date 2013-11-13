@@ -30,6 +30,16 @@ $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 							instrument
 						</a>
 					</li>
+					<li <?php echo ( $module == 'admin' && $controller == 'category' ) ? 'class="active"' : '' ?>>
+						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'category' ), null, true ); ?>">
+							category
+						</a>
+					</li>
+					<li <?php echo ( $module == 'admin' && $controller == 'sub-category' ) ? 'class="active"' : '' ?>>
+						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'sub-category' ), null, true ); ?>">
+							sub-category
+						</a>
+					</li>
 					<li>
 						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user', 'action' => 'logout' ), null, true ); ?>">
 							logout

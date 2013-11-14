@@ -40,6 +40,7 @@ class My_Acl_Setup implements My_Acl_Interface
 			'admin:instrument',
 			'admin:category',
 			'admin:sub-category',
+			'admin:tag',
 		);
 
 		$this->default = array(

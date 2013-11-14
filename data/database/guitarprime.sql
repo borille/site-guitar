@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 14, 2013 at 04:58 PM
+-- Generation Time: Nov 14, 2013 at 05:20 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.3.13
 
@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `language` (
 --
 
 INSERT INTO `language` (`languageId`, `languageName`) VALUES
-(1, 'PortuguÃªs'),
+(1, 'Português'),
 (2, 'English');
 
 -- --------------------------------------------------------
@@ -132,7 +132,8 @@ CREATE TABLE IF NOT EXISTS `packagetrans` (
   `languageId` int(11) NOT NULL,
   `packageTransName` varchar(50) NOT NULL,
   `packageTransDesc` varchar(1000) NOT NULL,
-  PRIMARY KEY (`packageId`,`languageId`)
+  PRIMARY KEY (`packageId`,`languageId`),
+  KEY `languageId` (`languageId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -140,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `packagetrans` (
 --
 
 INSERT INTO `packagetrans` (`packageId`, `languageId`, `packageTransName`, `packageTransDesc`) VALUES
-(1, 1, 'Palhetada HÃ­brida', 'Palhetada HÃ­brida Ã© uma tÃ©cnica ...'),
+(1, 1, 'Palhetada Híbrida', 'Palhetada Híbrida é uma técnica ...'),
 (1, 2, 'Hybrid Picking', 'Hybrid Picking is a technique ...');
 
 -- --------------------------------------------------------
@@ -165,7 +166,28 @@ CREATE TABLE IF NOT EXISTS `subcategory` (
 --
 
 INSERT INTO `subcategory` (`subCategoryId`, `subCategoryName`, `categoryId`) VALUES
-(1, 'Palhetada HÃ­brida', 2);
+(1, 'Palhetada Híbrida', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tag`
+--
+
+CREATE TABLE IF NOT EXISTS `tag` (
+  `tagId` int(11) NOT NULL AUTO_INCREMENT,
+  `tagName` varchar(50) NOT NULL,
+  `tagColor` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`tagId`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `tag`
+--
+
+INSERT INTO `tag` (`tagId`, `tagName`, `tagColor`) VALUES
+(1, 'blues', ''),
+(2, 'pentatônica', '#AFAFAF');
 
 -- --------------------------------------------------------
 
@@ -192,6 +214,13 @@ INSERT INTO `user` (`userId`, `userName`, `userMail`, `userPassword`) VALUES
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `packagetrans`
+--
+ALTER TABLE `packagetrans`
+  ADD CONSTRAINT `packagetrans_ibfk_2` FOREIGN KEY (`languageId`) REFERENCES `language` (`languageId`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `packagetrans_ibfk_1` FOREIGN KEY (`packageId`) REFERENCES `package` (`packageId`) ON UPDATE CASCADE;
 
 --
 -- Constraints for table `subcategory`

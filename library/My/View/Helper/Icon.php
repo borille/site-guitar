@@ -39,14 +39,14 @@ class My_View_Helper_Icon extends My_View_Helper_HtmlElement
 	 */
 	public function setIcon( $icon )
 	{
-		if ( strpos( $icon, 'icon-' ) === false && $icon !== '' ) {
-			$icon = 'icon-' . $icon;
+		if ( strpos( $icon, 'glyphicon-' ) === false && $icon !== '' ) {
+			$icon = 'glyphicon-' . $icon;
 		}
 
 		if ( ( $class = $this->getAttribute( 'class' ) ) ) {
-			$this->setAttribute( 'class', $icon . ' ' . $class );
+			$this->setAttribute( 'class', 'glyphicon ' . $icon . ' ' . $class );
 		} else {
-			$this->setAttribute( 'class', $icon );
+			$this->setAttribute( 'class', 'glyphicon ' . $icon );
 		}
 		return $this;
 	}

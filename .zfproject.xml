@@ -120,6 +120,10 @@
               <actionMethod actionName="index"/>
               <actionMethod actionName="add"/>
               <actionMethod actionName="edit"/>
+              <actionMethod actionName="translate"/>
+              <actionMethod actionName="translateAdd"/>
+              <actionMethod actionName="translateEdit"/>
+              <actionMethod actionName="translateDelete"/>
             </controllerFile>
             <controllerFile controllerName="Language">
               <actionMethod actionName="index"/>
@@ -153,6 +157,7 @@
             <formFile formName="Category"/>
             <formFile formName="SubCategory"/>
             <formFile formName="Package"/>
+            <formFile formName="PackageTrans"/>
           </formsDirectory>
           <layoutsDirectory enabled="false"/>
           <modelsDirectory>
@@ -163,6 +168,7 @@
               <dbTableFile dbTableName="Category"/>
               <dbTableFile dbTableName="SubCategory"/>
               <dbTableFile dbTableName="Package"/>
+              <dbTableFile dbTableName="PackageTrans"/>
             </dbTableDirectory>
             <modelFile modelName="Admin"/>
           </modelsDirectory>
@@ -236,6 +242,18 @@
               </viewControllerScriptsDirectory>
               <viewControllerScriptsDirectory forControllerName="Package">
                 <viewScriptFile forActionName="edit"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Package">
+                <viewScriptFile forActionName="translate"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Package">
+                <viewScriptFile forActionName="translateAdd"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Package">
+                <viewScriptFile forActionName="translateEdit"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Package">
+                <viewScriptFile forActionName="translateDelete"/>
               </viewControllerScriptsDirectory>
             </viewScriptsDirectory>
             <viewHelpersDirectory/>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 14, 2013 at 12:48 PM
+-- Generation Time: Nov 14, 2013 at 04:58 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.3.13
 
@@ -120,6 +120,28 @@ CREATE TABLE IF NOT EXISTS `package` (
 
 INSERT INTO `package` (`packageId`, `packageName`, `subCategoryId`, `instrumentId`) VALUES
 (1, 'Introduction', 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `packagetrans`
+--
+
+CREATE TABLE IF NOT EXISTS `packagetrans` (
+  `packageId` int(11) NOT NULL,
+  `languageId` int(11) NOT NULL,
+  `packageTransName` varchar(50) NOT NULL,
+  `packageTransDesc` varchar(1000) NOT NULL,
+  PRIMARY KEY (`packageId`,`languageId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `packagetrans`
+--
+
+INSERT INTO `packagetrans` (`packageId`, `languageId`, `packageTransName`, `packageTransDesc`) VALUES
+(1, 1, 'Palhetada Híbrida', 'Palhetada Híbrida é uma técnica ...'),
+(1, 2, 'Hybrid Picking', 'Hybrid Picking is a technique ...');
 
 -- --------------------------------------------------------
 

@@ -118,6 +118,8 @@
             </controllerFile>
             <controllerFile controllerName="Package">
               <actionMethod actionName="index"/>
+              <actionMethod actionName="add"/>
+              <actionMethod actionName="edit"/>
             </controllerFile>
             <controllerFile controllerName="Language">
               <actionMethod actionName="index"/>
@@ -150,6 +152,7 @@
             <formFile formName="Language"/>
             <formFile formName="Category"/>
             <formFile formName="SubCategory"/>
+            <formFile formName="Package"/>
           </formsDirectory>
           <layoutsDirectory enabled="false"/>
           <modelsDirectory>
@@ -159,6 +162,7 @@
               <dbTableFile dbTableName="Language"/>
               <dbTableFile dbTableName="Category"/>
               <dbTableFile dbTableName="SubCategory"/>
+              <dbTableFile dbTableName="Package"/>
             </dbTableDirectory>
             <modelFile modelName="Admin"/>
           </modelsDirectory>
@@ -225,6 +229,12 @@
                 <viewScriptFile forActionName="add"/>
               </viewControllerScriptsDirectory>
               <viewControllerScriptsDirectory forControllerName="SubCategory">
+                <viewScriptFile forActionName="edit"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Package">
+                <viewScriptFile forActionName="add"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Package">
                 <viewScriptFile forActionName="edit"/>
               </viewControllerScriptsDirectory>
             </viewScriptsDirectory>

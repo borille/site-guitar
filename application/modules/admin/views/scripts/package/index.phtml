@@ -1,4 +1,27 @@
-<br /><br />
-<div id="view-content">
-	<p>View script for controller <b>Package</b> and script/action name <b>index</b></p>
-</div>
+<?php $this->title = 'Package' ?>
+
+<p class="pull-right"><?php echo $this->AddLinkHelper(); ?></p>
+
+<table class="table">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Category</th>
+		<th>Sub Category</th>
+		<th>Instrument</th>
+		<th>Options</th>
+	</tr>
+	<?php foreach ( $this->data as $row ): ?>
+		<tr>
+			<td><?php echo $row['packageId'] ?></td>
+			<td><?php echo $row['packageName'] ?></td>
+			<td><?php echo $row['categoryName'] ?></td>
+			<td><?php echo $row['subCategoryName'] ?></td>
+			<td><?php echo $row['instrumentName'] ?></td>
+			<td>
+				<?php echo $this->Edit( $row['packageId'] ) ?>
+				<?php echo $this->ConfirmDelete( $row['packageId'] ) ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+</table>

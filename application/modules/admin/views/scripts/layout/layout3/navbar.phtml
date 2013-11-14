@@ -14,37 +14,46 @@ $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<?php if ( Zend_Auth::getInstance()->hasIdentity() ) { ?>
-					<li <?php echo ( $module == 'admin' && $controller == 'user' ) ? 'class="active"' : '' ?>>
-						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user' ), null, true ); ?>">
-							user
-						</a>
-					</li>
-					<li <?php echo ( $module == 'admin' && $controller == 'language' ) ? 'class="active"' : '' ?>>
-						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'language' ), null, true ); ?>">
-							language
-						</a>
-					</li>
-					<li <?php echo ( $module == 'admin' && $controller == 'instrument' ) ? 'class="active"' : '' ?>>
-						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'instrument' ), null, true ); ?>">
-							instrument
-						</a>
-					</li>
-					<li <?php echo ( $module == 'admin' && $controller == 'category' ) ? 'class="active"' : '' ?>>
-						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'category' ), null, true ); ?>">
-							category
-						</a>
-					</li>
-					<li <?php echo ( $module == 'admin' && $controller == 'sub-category' ) ? 'class="active"' : '' ?>>
-						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'sub-category' ), null, true ); ?>">
-							sub-category
-						</a>
-					</li>
-					<li>
-						<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user', 'action' => 'logout' ), null, true ); ?>">
-							logout
-						</a>
-					</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<?php if ( Zend_Auth::getInstance()->hasIdentity() ) { ?>
+						<li <?php echo ( $module == 'admin' && $controller == 'user' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user' ), null, true ); ?>">
+								user
+							</a>
+						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'language' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'language' ), null, true ); ?>">
+								language
+							</a>
+						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'instrument' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'instrument' ), null, true ); ?>">
+								instrument
+							</a>
+						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'category' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'category' ), null, true ); ?>">
+								category
+							</a>
+						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'sub-category' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'sub-category' ), null, true ); ?>">
+								sub-category
+							</a>
+						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'package' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'package' ), null, true ); ?>">
+								package
+							</a>
+						</li>
+					</ul>
+				<li>
+					<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user', 'action' => 'logout' ), null, true ); ?>">
+						logout
+					</a>
+				</li>
 				<?php } ?>
 			</ul>
 		</div>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 13, 2013 at 07:09 PM
+-- Generation Time: Nov 14, 2013 at 12:48 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.3.13
 
@@ -98,6 +98,28 @@ CREATE TABLE IF NOT EXISTS `language` (
 INSERT INTO `language` (`languageId`, `languageName`) VALUES
 (1, 'Português'),
 (2, 'English');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `package`
+--
+
+CREATE TABLE IF NOT EXISTS `package` (
+  `packageId` int(11) NOT NULL AUTO_INCREMENT,
+  `packageName` varchar(50) NOT NULL,
+  `subCategoryId` int(11) NOT NULL,
+  `instrumentId` int(11) NOT NULL,
+  PRIMARY KEY (`packageId`),
+  KEY `subCategoryId` (`subCategoryId`,`instrumentId`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `package`
+--
+
+INSERT INTO `package` (`packageId`, `packageName`, `subCategoryId`, `instrumentId`) VALUES
+(1, 'Introduction', 1, 1);
 
 -- --------------------------------------------------------
 

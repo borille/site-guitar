@@ -1,0 +1,23 @@
+<?php $this->title = 'Tag' ?>
+
+<p class="pull-right"><?php echo $this->AddLinkHelper(); ?></p>
+
+<table class="table">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Color</th>
+		<th>Options</th>
+	</tr>
+	<?php foreach ( $this->data as $row ): ?>
+		<tr>
+			<td><?php echo $row['tagId'] ?></td>
+			<td><?php echo $row['tagName'] ?></td>
+			<td><?php echo $row['tagColor'] ?></td>
+			<td>
+				<?php echo $this->Edit( $row['tagId'] ) ?>
+				<?php echo $this->ConfirmDelete( $row['tagId'] ) ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+</table>

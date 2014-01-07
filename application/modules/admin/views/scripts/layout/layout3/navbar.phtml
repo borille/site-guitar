@@ -48,6 +48,11 @@ $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 								package
 							</a>
 						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'sub-package' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'sub-package' ), null, true ); ?>">
+								sub-package
+							</a>
+						</li>
 						<li <?php echo ( $module == 'admin' && $controller == 'tag' ) ? 'class="active"' : '' ?>>
 							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'tag' ), null, true ); ?>">
 								tag

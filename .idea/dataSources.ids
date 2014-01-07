@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="guitarprime" product="MySQL" version="5.5.24-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )" uuid="e23f52f1-70c2-4a19-ae9c-9b32c1226216">
+    <extra-name-characters>#@</extra-name-characters>
+    <identifier-quote-string>`</identifier-quote-string>
+    <synchronize>true</synchronize>
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://localhost:3306/guitarprime</jdbc-url>
+    <user-name>root</user-name>
+    <schema-pattern>guitarprime.*</schema-pattern>
+    <libraries>
+      <library>
+        <url>jar://$PROJECT_DIR$/data/database/mysql-connector-java-5.1.26-bin.jar!/</url>
+      </library>
+      <library>
+        <url>file://$PROJECT_DIR$/data/database/mysql-connector-license.txt</url>
+      </library>
+    </libraries>
+    <schema name="" catalog="guitarprime"/>
+    <table name="admin" schema="" catalog="guitarprime" type="TABLE">
+      <column name="adminId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="adminName" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="adminPassword" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="adminId"/>
+    </table>
+    <table name="instrument" schema="" catalog="guitarprime" type="TABLE">
+      <column name="instrumentId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="instrumentName" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="instrumentId"/>
+    </table>
+    <table name="language" schema="" catalog="guitarprime" type="TABLE">
+      <column name="languageId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="languageName" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="languageId"/>
+    </table>
+    <table name="user" schema="" catalog="guitarprime" type="TABLE">
+      <column name="userId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="userName" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="userMail" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="userPassword" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="userId"/>
+    </table>
+  </data-source>
+</component>

@@ -1,0 +1,23 @@
+<?php $this->title = 'Sub-Category' ?>
+
+<p class="pull-right"><?php echo $this->AddLinkHelper(); ?></p>
+
+<table class="table">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Category</th>
+		<th>Options</th>
+	</tr>
+	<?php foreach ( $this->data as $row ): ?>
+		<tr>
+			<td><?php echo $row['subCategoryId'] ?></td>
+			<td><?php echo $row['subCategoryName'] ?></td>
+			<td><?php echo $row['categoryName'] ?></td>
+			<td>
+				<?php echo $this->Edit( $row['subCategoryId'] ) ?>
+				<?php echo $this->ConfirmDelete( $row['subCategoryId'] ) ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+</table>

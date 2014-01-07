@@ -36,6 +36,7 @@ class My_Acl_Setup implements My_Acl_Interface
 			'admin:index',
 			'admin:user',
 			'admin:package',
+			'admin:sub-package',
 			'admin:language',
 			'admin:instrument',
 			'admin:category',

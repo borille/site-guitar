@@ -2,10 +2,10 @@
 -- version 3.5.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Nov 14, 2013 at 05:20 PM
--- Server version: 5.5.24-log
--- PHP Version: 5.3.13
+-- Servidor: localhost
+-- Tempo de Geração: 
+-- Versão do Servidor: 5.5.24-log
+-- Versão do PHP: 5.3.13
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `guitarprime`
+-- Banco de Dados: `guitarprime`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Estrutura da tabela `admin`
 --
 
 CREATE TABLE IF NOT EXISTS `admin` (
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `admin`
+-- Extraindo dados da tabela `admin`
 --
 
 INSERT INTO `admin` (`adminId`, `adminName`, `adminPassword`) VALUES
@@ -43,7 +43,7 @@ INSERT INTO `admin` (`adminId`, `adminName`, `adminPassword`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Estrutura da tabela `category`
 --
 
 CREATE TABLE IF NOT EXISTS `category` (
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `category` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `category`
+-- Extraindo dados da tabela `category`
 --
 
 INSERT INTO `category` (`categoryId`, `categoryName`) VALUES
@@ -63,7 +63,7 @@ INSERT INTO `category` (`categoryId`, `categoryName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `instrument`
+-- Estrutura da tabela `instrument`
 --
 
 CREATE TABLE IF NOT EXISTS `instrument` (
@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS `instrument` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `instrument`
+-- Extraindo dados da tabela `instrument`
 --
 
 INSERT INTO `instrument` (`instrumentId`, `instrumentName`) VALUES
@@ -82,7 +82,7 @@ INSERT INTO `instrument` (`instrumentId`, `instrumentName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `language`
+-- Estrutura da tabela `language`
 --
 
 CREATE TABLE IF NOT EXISTS `language` (
@@ -92,17 +92,17 @@ CREATE TABLE IF NOT EXISTS `language` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `language`
+-- Extraindo dados da tabela `language`
 --
 
 INSERT INTO `language` (`languageId`, `languageName`) VALUES
-(1, 'Portugu�s'),
+(1, 'Português'),
 (2, 'English');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `package`
+-- Estrutura da tabela `package`
 --
 
 CREATE TABLE IF NOT EXISTS `package` (
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `package` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `package`
+-- Extraindo dados da tabela `package`
 --
 
 INSERT INTO `package` (`packageId`, `packageName`, `subCategoryId`, `instrumentId`) VALUES
@@ -124,7 +124,7 @@ INSERT INTO `package` (`packageId`, `packageName`, `subCategoryId`, `instrumentI
 -- --------------------------------------------------------
 
 --
--- Table structure for table `packagetrans`
+-- Estrutura da tabela `packagetrans`
 --
 
 CREATE TABLE IF NOT EXISTS `packagetrans` (
@@ -137,17 +137,17 @@ CREATE TABLE IF NOT EXISTS `packagetrans` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `packagetrans`
+-- Extraindo dados da tabela `packagetrans`
 --
 
 INSERT INTO `packagetrans` (`packageId`, `languageId`, `packageTransName`, `packageTransDesc`) VALUES
-(1, 1, 'Palhetada H�brida', 'Palhetada H�brida � uma t�cnica ...'),
+(1, 1, 'Palhetada Híbrida', 'Palhetada Híbrida é uma técnica ...'),
 (1, 2, 'Hybrid Picking', 'Hybrid Picking is a technique ...');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `subcategory`
+-- Estrutura da tabela `subcategory`
 --
 
 CREATE TABLE IF NOT EXISTS `subcategory` (
@@ -162,16 +162,30 @@ CREATE TABLE IF NOT EXISTS `subcategory` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `subcategory`
+-- Extraindo dados da tabela `subcategory`
 --
 
 INSERT INTO `subcategory` (`subCategoryId`, `subCategoryName`, `categoryId`) VALUES
-(1, 'Palhetada H�brida', 2);
+(1, 'Palhetada Híbrida', 2);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tag`
+-- Estrutura da tabela `subpackage`
+--
+
+CREATE TABLE IF NOT EXISTS `subpackage` (
+  `subPackageId` int(11) NOT NULL AUTO_INCREMENT,
+  `subPackageName` varchar(50) NOT NULL,
+  `packageId` int(11) NOT NULL,
+  PRIMARY KEY (`subPackageId`),
+  KEY `packageId` (`packageId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tag`
 --
 
 CREATE TABLE IF NOT EXISTS `tag` (
@@ -182,17 +196,17 @@ CREATE TABLE IF NOT EXISTS `tag` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `tag`
+-- Extraindo dados da tabela `tag`
 --
 
 INSERT INTO `tag` (`tagId`, `tagName`, `tagColor`) VALUES
 (1, 'blues', ''),
-(2, 'pentat�nica', '#AFAFAF');
+(2, 'pentatônica', '#AFAFAF');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Estrutura da tabela `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -204,7 +218,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Dumping data for table `user`
+-- Extraindo dados da tabela `user`
 --
 
 INSERT INTO `user` (`userId`, `userName`, `userMail`, `userPassword`) VALUES
@@ -212,21 +226,27 @@ INSERT INTO `user` (`userId`, `userName`, `userMail`, `userPassword`) VALUES
 (3, 'claretimus', 'claretimus@gmail.com', '692c784846a2e1574709e921173d522c');
 
 --
--- Constraints for dumped tables
+-- Restrições para as tabelas dumpadas
 --
 
 --
--- Constraints for table `packagetrans`
+-- Restrições para a tabela `packagetrans`
 --
 ALTER TABLE `packagetrans`
-  ADD CONSTRAINT `packagetrans_ibfk_2` FOREIGN KEY (`languageId`) REFERENCES `language` (`languageId`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `packagetrans_ibfk_1` FOREIGN KEY (`packageId`) REFERENCES `package` (`packageId`) ON UPDATE CASCADE;
+  ADD CONSTRAINT `packagetrans_ibfk_1` FOREIGN KEY (`packageId`) REFERENCES `package` (`packageId`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `packagetrans_ibfk_2` FOREIGN KEY (`languageId`) REFERENCES `language` (`languageId`) ON UPDATE CASCADE;
 
 --
--- Constraints for table `subcategory`
+-- Restrições para a tabela `subcategory`
 --
 ALTER TABLE `subcategory`
   ADD CONSTRAINT `subcategory_ibfk_1` FOREIGN KEY (`categoryId`) REFERENCES `category` (`categoryId`) ON UPDATE CASCADE;
+
+--
+-- Restrições para a tabela `subpackage`
+--
+ALTER TABLE `subpackage`
+  ADD CONSTRAINT `subpackage_ibfk_1` FOREIGN KEY (`packageId`) REFERENCES `package` (`packageId`) ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

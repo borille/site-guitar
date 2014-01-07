@@ -157,6 +157,10 @@
               <actionMethod actionName="index"/>
               <actionMethod actionName="add"/>
               <actionMethod actionName="edit"/>
+              <actionMethod actionName="translate"/>
+              <actionMethod actionName="translateAdd"/>
+              <actionMethod actionName="translateEdit"/>
+              <actionMethod actionName="translateDelete"/>
             </controllerFile>
           </controllersDirectory>
           <formsDirectory>
@@ -171,6 +175,7 @@
             <formFile formName="PackageTrans"/>
             <formFile formName="Tag"/>
             <formFile formName="SubPackage"/>
+            <formFile formName="SubPackageTrans"/>
           </formsDirectory>
           <layoutsDirectory enabled="false"/>
           <modelsDirectory>
@@ -184,6 +189,7 @@
               <dbTableFile dbTableName="PackageTrans"/>
               <dbTableFile dbTableName="Tag"/>
               <dbTableFile dbTableName="SubPackage"/>
+              <dbTableFile dbTableName="SubPackageTrans"/>
             </dbTableDirectory>
             <modelFile modelName="Admin"/>
           </modelsDirectory>
@@ -290,6 +296,18 @@
               </viewControllerScriptsDirectory>
               <viewControllerScriptsDirectory forControllerName="SubPackage">
                 <viewScriptFile forActionName="edit"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="SubPackage">
+                <viewScriptFile forActionName="translate"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="SubPackage">
+                <viewScriptFile forActionName="translateAdd"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="SubPackage">
+                <viewScriptFile forActionName="translateEdit"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="SubPackage">
+                <viewScriptFile forActionName="translateDelete"/>
               </viewControllerScriptsDirectory>
             </viewScriptsDirectory>
             <viewHelpersDirectory/>

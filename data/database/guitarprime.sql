@@ -141,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `packagetrans` (
 --
 
 INSERT INTO `packagetrans` (`packageId`, `languageId`, `packageTransName`, `packageTransDesc`) VALUES
-(1, 1, 'Palhetada Híbrida', 'Palhetada Híbrida é uma técnica ...'),
+(1, 1, 'Palhetada Híbrida', '<p>Palhetada H&iacute;brida &eacute; uma t&eacute;cnica ...</p>\r\n'),
 (1, 2, 'Hybrid Picking', 'Hybrid Picking is a technique ...');
 
 -- --------------------------------------------------------
@@ -180,7 +180,37 @@ CREATE TABLE IF NOT EXISTS `subpackage` (
   `packageId` int(11) NOT NULL,
   PRIMARY KEY (`subPackageId`),
   KEY `packageId` (`packageId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Extraindo dados da tabela `subpackage`
+--
+
+INSERT INTO `subpackage` (`subPackageId`, `subPackageName`, `packageId`) VALUES
+(1, 'Parte Um', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `subpackagetrans`
+--
+
+CREATE TABLE IF NOT EXISTS `subpackagetrans` (
+  `subpackageId` int(11) NOT NULL,
+  `languageId` int(11) NOT NULL,
+  `subpackageTransName` varchar(50) NOT NULL,
+  `subpackageTransDesc` varchar(4000) NOT NULL,
+  PRIMARY KEY (`subpackageId`,`languageId`),
+  KEY `languageId` (`languageId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `subpackagetrans`
+--
+
+INSERT INTO `subpackagetrans` (`subpackageId`, `languageId`, `subpackageTransName`, `subpackageTransDesc`) VALUES
+(1, 1, 'Parte Um', '<p>Nessa parte, voc&ecirc; ir&aacute; descobrir</p>\r\n'),
+(1, 2, 'Part One', '<p>Description part one.</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -247,6 +277,13 @@ ALTER TABLE `subcategory`
 --
 ALTER TABLE `subpackage`
   ADD CONSTRAINT `subpackage_ibfk_1` FOREIGN KEY (`packageId`) REFERENCES `package` (`packageId`) ON UPDATE CASCADE;
+
+--
+-- Restrições para a tabela `subpackagetrans`
+--
+ALTER TABLE `subpackagetrans`
+  ADD CONSTRAINT `subpackagetrans_ibfk_2` FOREIGN KEY (`languageId`) REFERENCES `language` (`languageId`) ON UPDATE CASCADE,
+  ADD CONSTRAINT `subpackagetrans_ibfk_1` FOREIGN KEY (`subpackageId`) REFERENCES `subpackage` (`subPackageId`) ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

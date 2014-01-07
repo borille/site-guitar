@@ -17,6 +17,7 @@
 			<td>
 				<?php echo $this->Edit( $row['subPackageId'] ) ?>
 				<?php echo $this->ConfirmDelete( $row['subPackageId'] ) ?>
+				<?php echo $this->Link( $this->Icon( 'random' ), null, 'translate', array( 'id' => $row['subPackageId'] ) ) ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>

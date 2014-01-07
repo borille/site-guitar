@@ -81,7 +81,7 @@ class Admin_PackageController extends My_Controller_Action
 				$form->populate( $this->getRequest()->getPost() );
 			}
 		} else {
-			$form->populate( $tablePackageTrans->getId( array( 'categoryId' => $id, 'languageId' => $language ) ) );
+			$form->populate( $tablePackageTrans->getId( array( 'packageId' => $id, 'languageId' => $language ) ) );
 		}
 
 		$this->view->id = $id;
@@ -91,7 +91,7 @@ class Admin_PackageController extends My_Controller_Action
 	public function translateDeleteAction()
 	{
 		$tablePackageTrans = new Admin_Model_DbTable_PackageTrans();
-		if ( $tablePackageTrans->delete( array( 'categoryId' => $this->getRequest()->getParam( 'id' ), 'languageId' => $this->getRequest()->getParam( 'language' ) ) ) ) {
+		if ( $tablePackageTrans->delete( array( 'packageId' => $this->getRequest()->getParam( 'id' ), 'languageId' => $this->getRequest()->getParam( 'language' ) ) ) ) {
 			My_Action_Helper::showMessage( 'Excluído com Sucesso!' );
 		} else {
 			My_Action_Helper::showMessage( 'Erro ao excluir!', 'danger' );

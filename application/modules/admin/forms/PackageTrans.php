@@ -9,7 +9,7 @@ class Admin_Form_PackageTrans extends Zend_Form
 
 		$this->setAttrib( 'class', 'form' );
 
-		$packageId = new Zend_Form_Element_Text( 'packageId' );
+		$packageId = new Zend_Form_Element_Hidden( 'packageId' );
 
 		$languageId = new Zend_Form_Element_Select( 'languageId' );
 		$languageId->setLabel( 'Language' )
@@ -28,7 +28,7 @@ class Admin_Form_PackageTrans extends Zend_Form
 		$packageTransDesc = new Zend_Form_Element_Textarea( 'packageTransDesc' );
 		$packageTransDesc->setLabel( 'Description' )
 			->setRequired( true )
-			->setAttrib( 'class', 'form-control' )
+			->setAttrib( 'class', 'form-control ckeditor' )
 			->setAttrib( 'rows', '4' );
 
 		$submit = new Zend_Form_Element_Submit( 'submit' );

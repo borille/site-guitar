@@ -1,4 +1,13 @@
-<br /><br />
-<div id="view-content">
-	<p>View script for controller <b>Blog</b> and script/action name <b>view</b></p>
+<?php
+$this->title = "Blog";
+$this->subtitle = "guitarprime";
+?>
+
+<div class="row">
+	<div class="col-md-9">
+		<?php echo $this->partial( 'blog/list.phtml', array( 'row' => $this->data ) ) ?>
+	</div>
+	<div class="col-md-3">
+		content
+	</div>
 </div>

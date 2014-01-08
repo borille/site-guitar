@@ -28,6 +28,15 @@ class Default_Model_DbTable_Blog extends My_Db_Table_Abstract
 		return $this->returnAll( $select );
 	}
 
+	public function getArticle( $id )
+	{
+		$select = parent::getSelect();
+		$select->join( 'admin', 'blog.adminId = admin.adminId', 'adminFullName' )
+			->where( 'blog.blogId = ?', $id );
+
+		return $this->returnOne( $select );
+	}
+
 	public function listArticles_()
 	{
 		$data = array(

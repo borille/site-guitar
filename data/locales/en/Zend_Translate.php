@@ -43,4 +43,7 @@ return array(
 	'remember-password' => "Already have an account and remember your password?",
 	//about
 	'members' => 'Members',
+	//blog
+	'posted' => 'Posted',
+	'by' => 'by',
 );

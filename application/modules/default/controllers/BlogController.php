@@ -20,7 +20,8 @@ class Default_BlogController extends Zend_Controller_Action
 
 	public function viewAction()
 	{
-		// action body
+		$tableBlog = new Default_Model_DbTable_Blog();
+		$this->view->data = $tableBlog->getArticle( $this->getRequest()->getParam( 'id' ) );
 	}
 
 

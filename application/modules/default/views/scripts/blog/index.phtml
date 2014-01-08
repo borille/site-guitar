@@ -3,4 +3,13 @@ $this->title = "Blog";
 $this->subtitle = "guitarprime";
 ?>
 
-<?php echo $this->render( 'blog/list.phtml' ) ?>
+<div class="row">
+	<div class="col-md-9">
+		<?php foreach ( $this->data as $row ): ?>
+			<?php echo $this->partial( 'blog/list.phtml', array( 'row' => $row ) ) ?>
+		<?php endforeach; ?>
+	</div>
+	<div class="col-md-3">
+		content
+	</div>
+</div>

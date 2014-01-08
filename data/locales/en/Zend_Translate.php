@@ -46,4 +46,6 @@ return array(
 	//blog
 	'posted' => 'Posted',
 	'by' => 'by',
+	//search
+	'results' => 'Results'
 );

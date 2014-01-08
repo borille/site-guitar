@@ -41,8 +41,20 @@ class Default_IndexController extends Zend_Controller_Action
 		$this->view->authors = $tableAuthor->listAll();
 	}
 
+	public function searchAction()
+	{
+		$search = $this->getRequest()->getParam( 'txt-search' );
+
+		$tableBlog = new Default_Model_DbTable_Blog();
+		$this->view->blog = $tableBlog->searchBlog( $search );
+
+		$this->view->search = $search;
+	}
+
 
 }
+
+
 
 
 

@@ -1,0 +1,9 @@
+<?php $this->title = $this->translate( 'results' ); ?>
+<?php $this->subtitle = $this->search; ?>
+
+<?php if ( $this->blog ): ?>
+	<h2>Blog</h2>
+	<?php foreach ( $this->blog as $blog ): ?>
+		<h3><?php echo $blog['blogTitle'] ?></h3>
+	<?php endforeach; ?>
+<?php endif; ?>

@@ -61,5 +61,15 @@ class Default_Model_DbTable_Blog extends My_Db_Table_Abstract
 		return $result;
 	}
 
+	public function searchBlog( $search )
+	{
+		$select = parent::getSelect();
+		$select->join( 'admin', 'blog.adminId = admin.adminId', 'adminFullName' )
+			->where( "blog.blogTitle like '%$search%'" )
+			->orWhere( "blog.blogTag like '%$search%'" );
+
+		return $this->returnAll( $select );
+	}
+
 }
 

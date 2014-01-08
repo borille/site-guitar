@@ -19,7 +19,7 @@ $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 				<li <?php echo ( $controller == 'index' && $action == 'index' ) ? 'class="active"' : '' ?>>
 					<a href="<?php echo $this->Url( array( 'controller' => 'index' ), null, true ) ?>">Home</a>
 				</li>
-                <li <?php echo ( $controller == 'blog' && $action == 'index' ) ? 'class="active"' : '' ?>>
+				<li <?php echo ( $controller == 'blog' && $action == 'index' ) ? 'class="active"' : '' ?>>
 					<a href="<?php echo $this->Url( array( 'controller' => 'blog', 'action' => 'index' ), null, true ) ?>"><?php echo $this->translate( 'blog' ) ?></a>
 				</li>
 				<li <?php echo ( $controller == 'index' && $action == 'about' ) ? 'class="active"' : '' ?>>
@@ -43,7 +43,8 @@ $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 			</ul>
 
 			<div class="col-sm-4 col-md-4 pull-right">
-				<form class="navbar-form" role="search">
+				<form class="navbar-form" role="search" method="GET"
+				      action="<?php echo $this->url( array( 'controller' => 'index', 'action' => 'search' ), null, true ); ?>">
 					<div class="input-group">
 						<input type="text" class="form-control" placeholder="<?php echo $this->translate( 'search' ) ?>"
 						       name="txt-search">

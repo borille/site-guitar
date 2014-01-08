@@ -6,12 +6,14 @@
 	<tr>
 		<th>Id</th>
 		<th>Name</th>
+		<th>Full Name</th>
 		<th>Options</th>
 	</tr>
 	<?php foreach ( $this->data as $row ): ?>
 		<tr>
 			<td><?php echo $row['adminId'] ?></td>
 			<td><?php echo $row['adminName'] ?></td>
+			<td><?php echo $row['adminFullName'] ?></td>
 			<td>
 				<?php echo $this->Edit( $row['adminId'] ) ?>
 				<?php echo $this->ConfirmDelete( $row['adminId'] ) ?>

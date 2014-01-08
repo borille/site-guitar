@@ -12,7 +12,12 @@ class Admin_Form_User extends Zend_Form
 		$adminId = new Zend_Form_Element_Hidden( 'adminId' );
 
 		$adminUser = new Zend_Form_Element_Text( 'adminName' );
-		$adminUser->setLabel( 'Username' )
+		$adminUser->setLabel( 'Name' )
+			->setRequired( true )
+			->setAttrib( 'class', 'form-control' );
+
+		$adminFullName = new Zend_Form_Element_Text( 'adminFullName' );
+		$adminFullName->setLabel( 'Full Name' )
 			->setRequired( true )
 			->setAttrib( 'class', 'form-control' );
 
@@ -36,6 +41,7 @@ class Admin_Form_User extends Zend_Form
 		$this->addElements( array(
 			$adminId,
 			$adminUser,
+			$adminFullName,
 			$adminPassword,
 			$passConfirm,
 			$submit

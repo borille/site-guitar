@@ -8,6 +8,6 @@ $this->subtitle = "guitarprime";
 		<?php echo $this->partial( 'blog/list.phtml', array( 'row' => $this->data ) ) ?>
 	</div>
 	<div class="col-md-3">
-		content
+		<?php echo $this->render( 'blog/sumary.phtml' ) ?>
 	</div>
 </div>

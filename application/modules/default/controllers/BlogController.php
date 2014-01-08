@@ -16,12 +16,14 @@ class Default_BlogController extends Zend_Controller_Action
 
 		$tableBlog = new Default_Model_DbTable_Blog();
 		$this->view->data = $tableBlog->listArticles( $filter );
+		$this->view->sumary = $tableBlog->getSumary();
 	}
 
 	public function viewAction()
 	{
 		$tableBlog = new Default_Model_DbTable_Blog();
 		$this->view->data = $tableBlog->getArticle( $this->getRequest()->getParam( 'id' ) );
+		$this->view->sumary = $tableBlog->getSumary();
 	}
 
 

@@ -37,45 +37,28 @@ class Default_Model_DbTable_Blog extends My_Db_Table_Abstract
 		return $this->returnOne( $select );
 	}
 
-	public function listArticles_()
+	public function getSumary()
 	{
-		$data = array(
-			array(
-				'id' => 1,
-				'title' => 'Título',
-				'author' => 'Chris Barnes',
-				'category' => 'Releases',
-				'date' => 'July 24, 2012',
-				'body' => 'We make the WordPress Bootstrap CSS plugin that your referred to earlier, on Host Like Toast.</br>
-				This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress
-				shortcodes to implement some of the bootstrap features.</br>
-				You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes
-				easily.
-				Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter
-				Bootstrap
-				2.0.</br>
-				We make the WordPress Bootstrap CSS plugin that your referred to earlier, on Host Like Toast.</br>
-				This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress
-				shortcodes to implement some of the bootstrap features.</br>
-				You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes
-				easily.
-				Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter
-				Bootstrap
-				2.0.</br>',
-				'tag' => array(
-					array(
-						'name' => 'bootstrap',
-						'url' => '#'
-					),
-					array(
-						'name' => 'twitter',
-						'url' => '#'
-					)
-				)
-			)
-		);
+		$select = $this->getAdapter()->select();
+		$select->from( $this->getTableName(), array(
+			'blogId',
+			'blogTitle',
+			"DATE_FORMAT(blogDate, '%M') AS MONTH",
+			"DATE_FORMAT(blogDate, '%Y') AS YEAR",
+		) );
 
-		return $data;
+		$data = $this->returnAll( $select );
+
+		$result = array();
+		foreach ( $data as $row ) {
+			$result[$row['YEAR']][$row['MONTH']][] = array(
+				'blogId' => $row['blogId'],
+				'blogTitle' => $row['blogTitle'],
+			);
+		}
+
+		//var_dump( $result ); die;
+		return $result;
 	}
 
 }

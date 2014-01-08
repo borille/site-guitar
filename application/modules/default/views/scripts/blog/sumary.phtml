@@ -1,0 +1,17 @@
+<?php foreach ( $this->sumary as $yearKey => $yearValue ): ?>
+	<ul>
+		<span><?php echo $yearKey ?></span>
+		<?php foreach ( $yearValue as $monthKey => $monthValue ): ?>
+			<li>
+				<span><?php echo $monthKey ?></span>
+				<?php foreach ( $monthValue as $article ): ?>
+					<ul>
+						<a href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'view', 'id' => $article['blogId'] ), null, true ); ?>">
+							<?php echo $article['blogTitle'] ?>
+						</a>
+					</ul>
+				<?php endforeach; ?>
+			</li>
+		<?php endforeach; ?>
+	</ul>
+<?php endforeach; ?>

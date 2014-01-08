@@ -6,7 +6,7 @@
     </list>
     <ignored path="site-guitar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389199804457" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389199813579" ignored="false" />
     <file path="/dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389197947744" ignored="false" />
     <file path="/ErrorController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381864858799" ignored="false" />
     <file path="/application.ini" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1384192823199" ignored="false" />
@@ -718,7 +718,11 @@
       <created>1389199808682</created>
       <updated>1389199808682</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="incluido adminFullName&#10;">
+      <created>1389199816242</created>
+      <updated>1389199816242</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">

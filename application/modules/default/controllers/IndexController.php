@@ -37,7 +37,8 @@ class Default_IndexController extends Zend_Controller_Action
 
 	public function aboutAction()
 	{
-
+		$tableAuthor = new Default_Model_DbTable_Author();
+		$this->view->authors = $tableAuthor->listAll();
 	}
 
 

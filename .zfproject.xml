@@ -60,6 +60,7 @@
             <dbTableDirectory>
               <dbTableFile dbTableName="User"/>
               <dbTableFile dbTableName="Blog"/>
+              <dbTableFile dbTableName="Author"/>
             </dbTableDirectory>
           </modelsDirectory>
           <viewsDirectory>

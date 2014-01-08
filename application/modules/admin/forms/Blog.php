@@ -24,6 +24,11 @@ class Admin_Form_Blog extends Zend_Form
 			->setRequired( true )
 			->setAttrib( 'class', 'form-control ckeditor' );
 
+		$blogTag = new Zend_Form_Element_Text( 'blogTag' );
+		$blogTag->setLabel( 'Tags' )
+			->setAttrib( 'class', 'form-control' )
+			->setDescription( 'comma separated' );
+
 		$submit = new Zend_Form_Element_Submit( 'submit' );
 		$submit->setLabel( 'Ok' )
 			->setAttrib( 'class', 'btn btn-lg btn-primary btn-block' );
@@ -32,6 +37,7 @@ class Admin_Form_Blog extends Zend_Form
 			$blogId,
 			$blogTitle,
 			$blogContent,
+			$blogTag,
 			$submit,
 			$adminId
 		) );

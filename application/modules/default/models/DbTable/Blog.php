@@ -1,12 +1,34 @@
 <?php
 
-class Default_Model_DbTable_Blog extends Zend_Db_Table_Abstract
+class Default_Model_DbTable_Blog extends My_Db_Table_Abstract
 {
 
-	protected $_name = 'blog';
+	public function init()
+	{
+		parent::configDbTable( NULL, 'blog', 'blogId' );
+	}
 
+	public function getSelect()
+	{
+		$select = parent::getSelect();
+		$select->join( 'admin', 'blog.adminId = admin.adminId', 'adminFullName' );
 
-	public function listArticles()
+		return $select;
+	}
+
+	public function listArticles( $filter )
+	{
+		$select = parent::getSelect();
+		$select->join( 'admin', 'blog.adminId = admin.adminId', 'adminFullName' );
+
+		if ( $filter['tag'] ) {
+			$select->where( "blog.blogTag like '%" . $filter['tag'] . "%'" );
+		}
+
+		return $this->returnAll( $select );
+	}
+
+	public function listArticles_()
 	{
 		$data = array(
 			array(

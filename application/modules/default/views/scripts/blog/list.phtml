@@ -1,0 +1,44 @@
+<div class="row">
+	<div class="col-md-9">
+		<?php foreach ( $this->data as $row ): ?>
+			<article>
+				<div class="page-header">
+					<h3 id="grid">
+						<a href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'view', 'id' => $row['blogId'] ), null, true ); ?>">
+							<?php echo $row['blogTitle'] ?>
+						</a>
+					</h3>
+				</div>
+				<p class="meta">Posted
+					<time datetime="2012-07-24" pubdate=""><?php echo $row['blogDate'] ?></time>
+					by
+					<a href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'author', 'id' => $row['adminId'] ), null, true ); ?>"
+					   title="Posts by <?php echo $row['adminFullName'] ?>" rel="author">
+						<?php echo $row['adminFullName'] ?>
+					</a>
+					<span class="amp">&amp;</span> filed under
+					<a href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'category', 'name' => $row['adminId'] ), null, true ); ?>"
+					   title="View all posts in <?php echo $row['adminId'] ?>"
+					   rel="category tag"><?php echo $row['adminId'] ?>
+					</a>.
+				</p>
+				<p>
+					<?php echo $row['blogContent'] ?>
+				</p>
+
+				<p class="tags">
+					<span class="tags-title">Tags:</span>
+					<?php $tags = explode( ',', $row['blogTag'] ); ?>
+					<?php foreach ( $tags as $tag ): ?>
+						<a href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'index', 'tag' => trim( $tag ) ), null, true ); ?>"
+						   rel="tag"
+						   class="label label-default"><?php echo trim( $tag ) ?></a>
+					<?php endforeach; ?>
+				</p>
+			</article>
+		<?php endforeach; ?>
+	</div>
+	<div class="col-md-3">
+		content
+	</div>
+</div>

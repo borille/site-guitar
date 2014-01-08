@@ -1,47 +1,6 @@
 <?php
 $this->title = "Blog";
 $this->subtitle = "guitarprime";
-
-//var_dump($this->data);die;
 ?>
 
-<div class="row">
-	<div class="col-md-9">
-		<?php foreach ( $this->data as $row ): ?>
-			<article>
-				<div class="page-header">
-					<h3 id="grid">
-						<a href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'view', 'id' => $row['id'] ), null, true ); ?>">
-							<?php echo $row['title'] ?>
-						</a>
-					</h3>
-				</div>
-				<p class="meta">Posted
-					<time datetime="2012-07-24" pubdate=""><?php echo $row['date'] ?></time>
-					by <a
-						href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'author', 'name' => $row['author'] ), null, true ); ?>"
-						title="Posts by <?php echo $row['author'] ?>" rel="author">
-						<?php echo $row['author'] ?>
-					</a> <span class="amp">&amp;</span> filed under <a
-						href="<?php echo $this->url( array( 'controller' => 'blog', 'action' => 'category', 'name' => $row['category'] ), null, true ); ?>"
-						title="View all posts in <?php echo $row['category'] ?>"
-						rel="category tag"><?php echo $row['category'] ?></a>.
-				</p>
-				<p>
-					<?php echo $row['body'] ?>
-				</p>
-
-				<p class="tags">
-					<span class="tags-title">Tags:</span>
-					<?php foreach ( $row['tag'] as $tag ): ?>
-						<a href="<?php echo $tag['url'] ?>" rel="tag"
-						   class="label label-default"><?php echo $tag['name'] ?></a>
-					<?php endforeach; ?>
-				</p>
-			</article>
-		<?php endforeach; ?>
-	</div>
-	<div class="col-md-3">
-		content
-	</div>
-</div>
+<?php echo $this->render( 'blog/list.phtml' ) ?>

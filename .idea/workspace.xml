@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c65830d-f463-4c69-852b-44371799a8f7" name="Default" comment="incluido subpackage trans&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/admin/forms/User.php" afterPath="$PROJECT_DIR$/application/modules/admin/forms/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/admin/views/scripts/user/index.phtml" afterPath="$PROJECT_DIR$/application/modules/admin/views/scripts/user/index.phtml" />
+    <list default="true" id="4c65830d-f463-4c69-852b-44371799a8f7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="site-guitar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389199792601" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389199804457" ignored="false" />
     <file path="/dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389197947744" ignored="false" />
     <file path="/ErrorController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381864858799" ignored="false" />
     <file path="/application.ini" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1384192823199" ignored="false" />
@@ -716,7 +714,11 @@
       <created>1389199776738</created>
       <updated>1389199776738</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="incluido adminFullName&#10;">
+      <created>1389199808682</created>
+      <updated>1389199808682</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -786,7 +788,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="incluido CRUD blog&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="incluido adminFullName&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -812,6 +814,7 @@
     <MESSAGE value=" - incluido packageTrans admin&#10;" />
     <MESSAGE value=" - incluido tag admin&#10;" />
     <MESSAGE value="incluido CRUD blog&#10;" />
+    <MESSAGE value="incluido adminFullName&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

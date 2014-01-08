@@ -63,6 +63,11 @@ $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 								blog
 							</a>
 						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'author' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'author' ), null, true ); ?>">
+								author
+							</a>
+						</li>
 					</ul>
 				<li>
 					<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user', 'action' => 'logout' ), null, true ); ?>">

@@ -42,6 +42,7 @@ class My_Acl_Setup implements My_Acl_Interface
 			'admin:category',
 			'admin:sub-category',
 			'admin:tag',
+			'admin:blog',
 		);
 
 		$this->default = array(

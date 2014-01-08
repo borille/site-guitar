@@ -162,6 +162,12 @@
               <actionMethod actionName="translateEdit"/>
               <actionMethod actionName="translateDelete"/>
             </controllerFile>
+            <controllerFile controllerName="Blog">
+              <actionMethod actionName="index"/>
+              <actionMethod actionName="add"/>
+              <actionMethod actionName="edit"/>
+              <actionMethod actionName="delete"/>
+            </controllerFile>
           </controllersDirectory>
           <formsDirectory>
             <formFile formName="Login"/>
@@ -176,6 +182,7 @@
             <formFile formName="Tag"/>
             <formFile formName="SubPackage"/>
             <formFile formName="SubPackageTrans"/>
+            <formFile formName="Blog"/>
           </formsDirectory>
           <layoutsDirectory enabled="false"/>
           <modelsDirectory>
@@ -190,6 +197,7 @@
               <dbTableFile dbTableName="Tag"/>
               <dbTableFile dbTableName="SubPackage"/>
               <dbTableFile dbTableName="SubPackageTrans"/>
+              <dbTableFile dbTableName="Blog"/>
             </dbTableDirectory>
             <modelFile modelName="Admin"/>
           </modelsDirectory>
@@ -308,6 +316,18 @@
               </viewControllerScriptsDirectory>
               <viewControllerScriptsDirectory forControllerName="SubPackage">
                 <viewScriptFile forActionName="translateDelete"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Blog">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Blog">
+                <viewScriptFile forActionName="add"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Blog">
+                <viewScriptFile forActionName="edit"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Blog">
+                <viewScriptFile forActionName="delete"/>
               </viewControllerScriptsDirectory>
             </viewScriptsDirectory>
             <viewHelpersDirectory/>

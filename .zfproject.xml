@@ -62,6 +62,7 @@
               <dbTableFile dbTableName="User"/>
               <dbTableFile dbTableName="Blog"/>
               <dbTableFile dbTableName="Author"/>
+              <dbTableFile dbTableName="Package"/>
             </dbTableDirectory>
           </modelsDirectory>
           <viewsDirectory>

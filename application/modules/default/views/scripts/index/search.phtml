@@ -1,9 +1,16 @@
 <?php $this->title = $this->translate( 'results' ); ?>
 <?php $this->subtitle = $this->search; ?>
 
+<?php if ( $this->package ): ?>
+    <h2><?php echo $this->translate('package') ?></h2>
+    <?php foreach ( $this->package as $package ): ?>
+        <h3><?php echo $package['packageName'] ?></h3>
+    <?php endforeach; ?>
+<?php endif; ?>
+
 <?php if ( $this->blog ): ?>
-	<h2>Blog</h2>
-	<?php foreach ( $this->blog as $blog ): ?>
-		<h3><?php echo $blog['blogTitle'] ?></h3>
-	<?php endforeach; ?>
+    <h2>Blog</h2>
+    <?php foreach ( $this->blog as $blog ): ?>
+        <h3><?php echo $blog['blogTitle'] ?></h3>
+    <?php endforeach; ?>
 <?php endif; ?>

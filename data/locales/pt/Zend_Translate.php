@@ -6,6 +6,7 @@ return array(
 	'your' => 'Seu',
 	'user' => 'Usuário',
 	'search' => 'Busca',
+    'package' => 'Pacote',
 	//menu
 	'sign-up' => 'Cadastre-se',
 	'logout' => 'Sair',

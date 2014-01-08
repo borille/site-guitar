@@ -9,6 +9,7 @@
 		<th>Category</th>
 		<th>Sub Category</th>
 		<th>Instrument</th>
+		<th>Author</th>
 		<th>Options</th>
 	</tr>
 	<?php foreach ( $this->data as $row ): ?>
@@ -18,10 +19,12 @@
 			<td><?php echo $row['categoryName'] ?></td>
 			<td><?php echo $row['subCategoryName'] ?></td>
 			<td><?php echo $row['instrumentName'] ?></td>
+			<td><?php echo $row['authorName'] ?></td>
 			<td>
 				<?php echo $this->Edit( $row['packageId'] ) ?>
 				<?php echo $this->ConfirmDelete( $row['packageId'] ) ?>
 				<?php echo $this->Link( $this->Icon( 'random' ), null, 'translate', array( 'id' => $row['packageId'] ) ) ?>
+				<?php echo $this->Link( $this->Icon( 'glyphicon-th-large' ), 'sub-package', 'index', array( 'package' => $row['packageId'] ) ) ?>
 			</td>
 		</tr>
 	<?php endforeach; ?>

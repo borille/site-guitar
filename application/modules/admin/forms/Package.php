@@ -34,6 +34,19 @@ class Admin_Form_Package extends Zend_Form
 			$instrumentId->addMultiOption( $instrument['instrumentId'], $instrument['instrumentName'] );
 		}
 
+        $authorId = new Zend_Form_Element_Select( 'authorId' );
+        $authorId->setLabel( 'Author' )
+            ->setRequired( true )
+            ->setAttrib( 'class', 'form-control' );
+
+        foreach ( Admin_Model_DbTable_Author::getInstance()->listAll() as $author ) {
+            $authorId->addMultiOption( $author['authorId'], $author['authorName'] );
+        }
+
+        $packageTag = new Zend_Form_Element_Text( 'packageTag' );
+        $packageTag->setLabel( 'Tags' )
+            ->setAttrib( 'class', 'form-control' );
+
 		$submit = new Zend_Form_Element_Submit( 'submit' );
 		$submit->setLabel( 'Ok' )
 			->setAttrib( 'class', 'btn btn-lg btn-primary btn-block' );
@@ -43,6 +56,8 @@ class Admin_Form_Package extends Zend_Form
 			$packageName,
 			$subCategoryId,
 			$instrumentId,
+            $authorId,
+            $packageTag,
 			$submit
 		) );
 	}

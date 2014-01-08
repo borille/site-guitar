@@ -1,0 +1,21 @@
+<?php $this->title = 'Author' ?>
+
+<p class="pull-right"><?php echo $this->AddLinkHelper(); ?></p>
+
+<table class="table">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Options</th>
+	</tr>
+	<?php foreach ( $this->data as $row ): ?>
+		<tr>
+			<td><?php echo $row['authorId'] ?></td>
+			<td><?php echo $row['authorName'] ?></td>
+			<td>
+				<?php echo $this->Edit( $row['authorId'] ) ?>
+				<?php echo $this->ConfirmDelete( $row['authorId'] ) ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+</table>

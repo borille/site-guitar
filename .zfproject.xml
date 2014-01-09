@@ -65,6 +65,7 @@
               <dbTableFile dbTableName="Author"/>
               <dbTableFile dbTableName="Package"/>
               <dbTableFile dbTableName="SubPackage"/>
+              <dbTableFile dbTableName="Carousel"/>
             </dbTableDirectory>
           </modelsDirectory>
           <viewsDirectory>

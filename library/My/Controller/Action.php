@@ -137,12 +137,10 @@ class My_Controller_Action extends Zend_Controller_Action
 
 	public function deleteAction()
 	{
-		if ( $this->getRequest()->isPost() ) {
-			if ( $this->getTable()->delete( $this->getRequest()->getParam( 'id' ) ) ) {
-				My_Action_Helper::showMessage( 'Excluído com Sucesso!' );
-			} else {
-				My_Action_Helper::showMessage( 'Erro ao excluir!', 'danger' );
-			}
+		if ( $this->getTable()->delete( $this->getRequest()->getParam( 'id' ) ) ) {
+			My_Action_Helper::showMessage( 'Excluído com Sucesso!' );
+		} else {
+			My_Action_Helper::showMessage( 'Erro ao excluir!', 'danger' );
 		}
 		My_Action_Helper::redirect( $this->getRequest()->getControllerName() );
 	}

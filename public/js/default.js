@@ -31,7 +31,6 @@ function confirmDeleteBs(redirectUrl) {
     divTag = $('<div/>');
 
     divTag.addClass('modal');
-    divTag.addClass('hide');
     divTag.addClass('fade');
 
     divTag.html('<div class="modal-dialog">\
@@ -44,7 +43,7 @@ function confirmDeleteBs(redirectUrl) {
                     <p style="font-size:14px">Essa operação não poderá ser desfeita!</p>\
                 </div>\
                 <div class="modal-footer">\
-                    <a class="btn" href="' + redirectUrl + '">Confirmar</a>\
+                    <a class="btn btn-default" href="' + redirectUrl + '">Confirmar</a>\
                     <a data-dismiss="modal" class="btn btn-primary">Cancelar</a>\
                 </div>\
             </div>\

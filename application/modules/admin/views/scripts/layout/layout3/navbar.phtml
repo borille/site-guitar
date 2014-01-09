@@ -68,6 +68,11 @@ $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 								author
 							</a>
 						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'file' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'file' ), null, true ); ?>">
+								file
+							</a>
+						</li>
 					</ul>
 				<li>
 					<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user', 'action' => 'logout' ), null, true ); ?>">

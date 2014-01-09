@@ -44,6 +44,7 @@ class My_Acl_Setup implements My_Acl_Interface
 			'admin:tag',
 			'admin:blog',
 			'admin:author',
+			'admin:file',
 		);
 
 		$this->default = array(

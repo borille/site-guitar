@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.1
+-- version 4.0.8
 -- http://www.phpmyadmin.net
 --
--- Servidor: localhost
--- Tempo de Geração: 
--- Versão do Servidor: 5.5.24-log
--- Versão do PHP: 5.3.13
+-- Host: 127.0.0.1
+-- Generation Time: Jan 08, 2014 at 11:49 PM
+-- Server version: 5.6.14
+-- PHP Version: 5.3.26
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Banco de Dados: `guitarprime`
+-- Database: `guitarprime`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE IF NOT EXISTS `admin` (
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Extraindo dados da tabela `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`adminId`, `adminName`, `adminFullName`, `adminPassword`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `admin` (`adminId`, `adminName`, `adminFullName`, `adminPassword`) V
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `author`
+-- Table structure for table `author`
 --
 
 CREATE TABLE IF NOT EXISTS `author` (
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `author` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Extraindo dados da tabela `author`
+-- Dumping data for table `author`
 --
 
 INSERT INTO `author` (`authorId`, `authorName`, `authorDesc`, `authorImg`, `authorSite`) VALUES
@@ -66,7 +66,7 @@ INSERT INTO `author` (`authorId`, `authorName`, `authorDesc`, `authorImg`, `auth
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `blog`
+-- Table structure for table `blog`
 --
 
 CREATE TABLE IF NOT EXISTS `blog` (
@@ -81,17 +81,17 @@ CREATE TABLE IF NOT EXISTS `blog` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Extraindo dados da tabela `blog`
+-- Dumping data for table `blog`
 --
 
 INSERT INTO `blog` (`blogId`, `blogTitle`, `blogContent`, `blogDate`, `adminId`, `blogTag`) VALUES
-(1, 'First Blog Post', '<p><span style="color:rgb(90, 90, 90); font-family:helvetica neue,helvetica,arial,sans-serif; font-size:14px">We make the <strong>WordPress Bootstrap CSS</strong> plugin that your referred to earlier, on Host Like Toast.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-family:helvetica neue,helvetica,arial,sans-serif; font-size:14px">This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress shortcodes to implement some of the bootstrap features.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-family:helvetica neue,helvetica,arial,sans-serif; font-size:14px">You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes easily. Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter Bootstrap 2.0.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-family:helvetica neue,helvetica,arial,sans-serif; font-size:14px">We make the WordPress Bootstrap CSS plugin that your referred to earlier, on Host Like Toast.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-family:helvetica neue,helvetica,arial,sans-serif; font-size:14px">This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress shortcodes to implement some of the bootstrap features.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-family:helvetica neue,helvetica,arial,sans-serif; font-size:14px">You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes easily. Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter Bootstrap 2.0.</span></p>\r\n', '2014-01-08 16:36:41', 1, 'bootstrap, twitter'),
-(2, 'From Wikipedia, the free encyclopedia', '<p><span style="color:rgb(0, 0, 0); font-family:sans-serif">A&nbsp;</span><strong>blog</strong><span style="color:rgb(0, 0, 0); font-family:sans-serif">&nbsp;(a truncation of the expression&nbsp;</span><em><strong>web log</strong></em><span style="color:rgb(0, 0, 0); font-family:sans-serif">)</span><sup><a href="http://en.wikipedia.org/wiki/Blog#cite_note-1" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;">[1]</a></sup><span style="color:rgb(0, 0, 0); font-family:sans-serif">&nbsp;is a discussion or informational site published on the&nbsp;</span><a href="http://en.wikipedia.org/wiki/World_Wide_Web" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="World Wide Web">World Wide Web</a><span style="color:rgb(0, 0, 0); font-family:sans-serif">&nbsp;and consisting of discrete entries (&quot;posts&quot;) typically displayed in reverse chronological order (the most recent post appears first). Until 2009 blogs were usually the work of a single individual, occasionally of a small group, and often covered a single subject. More recently &quot;multi-author blogs&quot; (MABs) have developed, with posts written by large numbers of authors and professionally edited. MABs from&nbsp;</span><a href="http://en.wikipedia.org/wiki/Newspaper" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Newspaper">newspapers</a><span style="color:rgb(0, 0, 0); font-family:sans-serif">, other media outlets,&nbsp;</span><a href="http://en.wikipedia.org/wiki/University" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="University">universities</a><span style="color:rgb(0, 0, 0); font-family:sans-serif">,&nbsp;</span><a class="mw-redirect" href="http://en.wikipedia.org/wiki/Think_tanks" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Think tanks">think tanks</a><span style="color:rgb(0, 0, 0); font-family:sans-serif">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Advocacy_group" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Advocacy group">advocacy groups</a><span style="color:rgb(0, 0, 0); font-family:sans-serif">&nbsp;and similar institutions account for an increasing quantity of blog traffic. The rise of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Twitter" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Twitter">Twitter</a><span style="color:rgb(0, 0, 0); font-family:sans-serif">&nbsp;and other &quot;</span><a href="http://en.wikipedia.org/wiki/Microblogging" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Microblogging">microblogging</a><span style="color:rgb(0, 0, 0); font-family:sans-serif">&quot; systems helps integrate MABs and single-author blogs into societal newstreams.&nbsp;</span><em>Blog</em><span style="color:rgb(0, 0, 0); font-family:sans-serif">&nbsp;can also be used as a verb, meaning</span><em>to maintain or add content to a blog</em><span style="color:rgb(0, 0, 0); font-family:sans-serif">.</span></p>\r\n', '2013-12-02 17:10:52', 1, 'wikipedia, twitter');
+(1, 'First Blog Post', '<p><span style="font-family:arial,helvetica,sans-serif"><span style="color:rgb(90, 90, 90); font-size:14px">We make the <strong>WordPress Bootstrap CSS</strong> plugin that your referred to earlier, on Host Like Toast.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-size:14px">This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress shortcodes to implement some of the bootstrap features.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-size:14px">You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes easily. Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter Bootstrap 2.0.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-size:14px">We make the WordPress Bootstrap CSS plugin that your referred to earlier, on Host Like Toast.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-size:14px">This plugin is free and open-source, and we have tutorials on the website for how you can use WordPress shortcodes to implement some of the bootstrap features.</span><br />\r\n<span style="color:rgb(90, 90, 90); font-size:14px">You could also, in your themes, use the do_shortcode() function to implement the existing shortcodes easily. Today we released version 2.0.0-beta so you can immediately start taking full advantage of Twitter Bootstrap 2.0.</span></span></p>\r\n', '2014-01-08 16:36:41', 1, 'bootstrap, twitter'),
+(2, 'From Wikipedia, the free encyclopedia', '<p><span style="font-size:14px"><span style="font-family:arial,helvetica,sans-serif"><span style="color:rgb(0, 0, 0)">A&nbsp;</span><strong>blog</strong><span style="color:rgb(0, 0, 0)">&nbsp;(a truncation of the expression&nbsp;</span><em><strong>web log</strong></em><span style="color:rgb(0, 0, 0)">)</span><sup><a href="http://en.wikipedia.org/wiki/Blog#cite_note-1" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;">[1]</a></sup><span style="color:rgb(0, 0, 0)">&nbsp;is a discussion or informational site published on the&nbsp;</span><a href="http://en.wikipedia.org/wiki/World_Wide_Web" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="World Wide Web">World Wide Web</a><span style="color:rgb(0, 0, 0)">&nbsp;and consisting of discrete entries (&quot;posts&quot;) typically displayed in reverse chronological order (the most recent post appears first). Until 2009 blogs were usually the work of a single individual, occasionally of a small group, and often covered a single subject. More recently &quot;multi-author blogs&quot; (MABs) have developed, with posts written by large numbers of authors and professionally edited. MABs from&nbsp;</span><a href="http://en.wikipedia.org/wiki/Newspaper" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Newspaper">newspapers</a><span style="color:rgb(0, 0, 0)">, other media outlets,&nbsp;</span><a href="http://en.wikipedia.org/wiki/University" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="University">universities</a><span style="color:rgb(0, 0, 0)">,&nbsp;</span><a class="mw-redirect" href="http://en.wikipedia.org/wiki/Think_tanks" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Think tanks">think tanks</a><span style="color:rgb(0, 0, 0)">,&nbsp;</span><a href="http://en.wikipedia.org/wiki/Advocacy_group" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Advocacy group">advocacy groups</a><span style="color:rgb(0, 0, 0)">&nbsp;and similar institutions account for an increasing quantity of blog traffic. The rise of&nbsp;</span><a href="http://en.wikipedia.org/wiki/Twitter" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Twitter">Twitter</a><span style="color:rgb(0, 0, 0)">&nbsp;and other &quot;</span><a href="http://en.wikipedia.org/wiki/Microblogging" style="text-decoration: none; color: rgb(11, 0, 128); background-image: none; font-family: sans-serif; line-height: 19.1875px;" title="Microblogging">microblogging</a><span style="color:rgb(0, 0, 0)">&quot; systems helps integrate MABs and single-author blogs into societal newstreams.&nbsp;</span><em>Blog</em><span style="color:rgb(0, 0, 0)">&nbsp;can also be used as a verb, meaning</span><em>to maintain or add content to a blog</em><span style="color:rgb(0, 0, 0)">.</span></span></span></p>\r\n', '2013-12-02 17:10:52', 1, 'wikipedia, twitter');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `category`
+-- Table structure for table `category`
 --
 
 CREATE TABLE IF NOT EXISTS `category` (
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `category` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Extraindo dados da tabela `category`
+-- Dumping data for table `category`
 --
 
 INSERT INTO `category` (`categoryId`, `categoryName`) VALUES
@@ -112,7 +112,7 @@ INSERT INTO `category` (`categoryId`, `categoryName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `instrument`
+-- Table structure for table `instrument`
 --
 
 CREATE TABLE IF NOT EXISTS `instrument` (
@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `instrument` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Extraindo dados da tabela `instrument`
+-- Dumping data for table `instrument`
 --
 
 INSERT INTO `instrument` (`instrumentId`, `instrumentName`) VALUES
@@ -131,7 +131,7 @@ INSERT INTO `instrument` (`instrumentId`, `instrumentName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `language`
+-- Table structure for table `language`
 --
 
 CREATE TABLE IF NOT EXISTS `language` (
@@ -141,7 +141,7 @@ CREATE TABLE IF NOT EXISTS `language` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Extraindo dados da tabela `language`
+-- Dumping data for table `language`
 --
 
 INSERT INTO `language` (`languageId`, `languageName`) VALUES
@@ -151,7 +151,7 @@ INSERT INTO `language` (`languageId`, `languageName`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `package`
+-- Table structure for table `package`
 --
 
 CREATE TABLE IF NOT EXISTS `package` (
@@ -159,46 +159,49 @@ CREATE TABLE IF NOT EXISTS `package` (
   `packageName` varchar(50) NOT NULL,
   `subCategoryId` int(11) NOT NULL,
   `instrumentId` int(11) NOT NULL,
+  `authorId` int(11) NOT NULL,
+  `packageTag` varchar(200) NOT NULL,
   PRIMARY KEY (`packageId`),
-  KEY `subCategoryId` (`subCategoryId`,`instrumentId`)
+  KEY `subCategoryId` (`subCategoryId`,`instrumentId`),
+  KEY `authorId` (`authorId`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Extraindo dados da tabela `package`
+-- Dumping data for table `package`
 --
 
-INSERT INTO `package` (`packageId`, `packageName`, `subCategoryId`, `instrumentId`) VALUES
-(1, 'Package	1', 1, 1),
-(2, 'Package	2', 2, 1),
-(3, 'Package	3', 3, 1);
+INSERT INTO `package` (`packageId`, `packageName`, `subCategoryId`, `instrumentId`, `authorId`, `packageTag`) VALUES
+(1, 'Package	1', 1, 1, 1, 'palhetada, picking'),
+(2, 'Package	2', 2, 1, 1, ''),
+(3, 'Package	3', 3, 1, 1, '');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `packagetrans`
+-- Table structure for table `packagetrans`
 --
 
 CREATE TABLE IF NOT EXISTS `packagetrans` (
   `packageId` int(11) NOT NULL,
   `languageId` int(11) NOT NULL,
   `packageTransName` varchar(50) NOT NULL,
-  `packageTransDesc` varchar(1000) NOT NULL,
+  `packageTransDesc` varchar(5000) NOT NULL,
   PRIMARY KEY (`packageId`,`languageId`),
   KEY `languageId` (`languageId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `packagetrans`
+-- Dumping data for table `packagetrans`
 --
 
 INSERT INTO `packagetrans` (`packageId`, `languageId`, `packageTransName`, `packageTransDesc`) VALUES
-(1, 1, 'Palhetada Híbrida', '<p>Palhetada H&iacute;brida &eacute; uma t&eacute;cnica ...</p>\r\n'),
-(1, 2, 'Hybrid Picking', 'Hybrid Picking is a technique ...');
+(1, 1, 'Palhetada Híbrida', '<p>Palhetada h&iacute;brida &eacute; um estilo de tocabilidade usado por muitos guitarristas do country, mas eles n&atilde;o s&atilde;o os &uacute;nicos a incorporarem essa t&eacute;cnica, guitarristas do blues, do rock e do jazz tamb&eacute;m se beneficiam desta t&eacute;cnica. Pois &ndash; a palhetada h&iacute;brida &eacute; uma maneira especial de palhetada que facilita a rapidez e a fluidez! Aprender essas t&eacute;cnicas de palhetadas &eacute; a melhor maneira de aumentar sua velocidade em solos de guitarra e ligaduras de guitarra solo, especialmente se voc&ecirc; tocar blues e rock.</p>\r\n'),
+(1, 2, 'Hybrid Picking', '<p><strong>Hybrid picking</strong>&nbsp;is a&nbsp;<a href="http://en.wikipedia.org/wiki/Guitar" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; " title="Guitar">guitar</a>-playing technique that involves picking with a&nbsp;<a href="http://en.wikipedia.org/wiki/Guitar_pick" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; " title="Guitar pick">pick</a>&nbsp;and one or more fingers alternately or simultaneously. Hybrid picking allows guitar players who use a pick (<a href="http://en.wikipedia.org/wiki/Plectrum" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; " title="Plectrum">plectrum</a>) to perform music which would normally require&nbsp;<a class="mw-redirect" href="http://en.wikipedia.org/wiki/Fingerstyle" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; " title="Fingerstyle">fingerstyle</a>&nbsp;playing. It also facilitates wide string leaps (e.g. from the sixth string to the second string, etc) which might otherwise be quite difficult. The technique is not widespread in most genres of guitar playing (though notable exceptions exist), but is most often employed by&nbsp;<a href="http://en.wikipedia.org/wiki/Rockabilly" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; " title="Rockabilly">rockabilly</a>,<a href="http://en.wikipedia.org/wiki/Country_music" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; " title="Country music">country</a>&nbsp;and&nbsp;<a href="http://en.wikipedia.org/wiki/Bluegrass_music" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; " title="Bluegrass music">bluegrass</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Flatpicking" style="text-decoration: none; color: rgb(6, 69, 173); background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; " title="Flatpicking">flatpickers</a>&nbsp;who play music which occasionally demands fingerstyle passages.</p>\r\n');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `subcategory`
+-- Table structure for table `subcategory`
 --
 
 CREATE TABLE IF NOT EXISTS `subcategory` (
@@ -213,7 +216,7 @@ CREATE TABLE IF NOT EXISTS `subcategory` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
--- Extraindo dados da tabela `subcategory`
+-- Dumping data for table `subcategory`
 --
 
 INSERT INTO `subcategory` (`subCategoryId`, `subCategoryName`, `categoryId`) VALUES
@@ -227,7 +230,7 @@ INSERT INTO `subcategory` (`subCategoryId`, `subCategoryName`, `categoryId`) VAL
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `subpackage`
+-- Table structure for table `subpackage`
 --
 
 CREATE TABLE IF NOT EXISTS `subpackage` (
@@ -236,19 +239,21 @@ CREATE TABLE IF NOT EXISTS `subpackage` (
   `packageId` int(11) NOT NULL,
   PRIMARY KEY (`subPackageId`),
   KEY `packageId` (`packageId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Extraindo dados da tabela `subpackage`
+-- Dumping data for table `subpackage`
 --
 
 INSERT INTO `subpackage` (`subPackageId`, `subPackageName`, `packageId`) VALUES
-(1, 'Parte Um', 1);
+(1, 'Parte Um', 1),
+(2, 'Parte Dois', 1),
+(3, 'Parte Um', 2);
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `subpackagetrans`
+-- Table structure for table `subpackagetrans`
 --
 
 CREATE TABLE IF NOT EXISTS `subpackagetrans` (
@@ -261,17 +266,19 @@ CREATE TABLE IF NOT EXISTS `subpackagetrans` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `subpackagetrans`
+-- Dumping data for table `subpackagetrans`
 --
 
 INSERT INTO `subpackagetrans` (`subpackageId`, `languageId`, `subpackageTransName`, `subpackageTransDesc`) VALUES
 (1, 1, 'Parte Um', '<p>Nessa parte, voc&ecirc; ir&aacute; descobrir</p>\r\n'),
-(1, 2, 'Part One', '<p>Description part one.</p>\r\n');
+(1, 2, 'Part One', '<p>Description part one.</p>\r\n'),
+(2, 1, 'Parte Dois', '<p>Nessa segunda parte</p>\r\n'),
+(2, 2, 'Part Two', '<p>This second part</p>\r\n');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `tag`
+-- Table structure for table `tag`
 --
 
 CREATE TABLE IF NOT EXISTS `tag` (
@@ -282,7 +289,7 @@ CREATE TABLE IF NOT EXISTS `tag` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
--- Extraindo dados da tabela `tag`
+-- Dumping data for table `tag`
 --
 
 INSERT INTO `tag` (`tagId`, `tagName`, `tagColor`) VALUES
@@ -292,7 +299,7 @@ INSERT INTO `tag` (`tagId`, `tagName`, `tagColor`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -304,7 +311,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
--- Extraindo dados da tabela `user`
+-- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`userId`, `userName`, `userMail`, `userPassword`) VALUES
@@ -312,36 +319,42 @@ INSERT INTO `user` (`userId`, `userName`, `userMail`, `userPassword`) VALUES
 (3, 'claretimus', 'claretimus@gmail.com', '692c784846a2e1574709e921173d522c');
 
 --
--- Restrições para as tabelas dumpadas
+-- Constraints for dumped tables
 --
 
 --
--- Restrições para a tabela `blog`
+-- Constraints for table `blog`
 --
 ALTER TABLE `blog`
   ADD CONSTRAINT `blog_ibfk_1` FOREIGN KEY (`adminId`) REFERENCES `admin` (`adminId`) ON UPDATE CASCADE;
 
 --
--- Restrições para a tabela `packagetrans`
+-- Constraints for table `package`
+--
+ALTER TABLE `package`
+  ADD CONSTRAINT `package_ibfk_1` FOREIGN KEY (`authorId`) REFERENCES `author` (`authorId`) ON UPDATE CASCADE;
+
+--
+-- Constraints for table `packagetrans`
 --
 ALTER TABLE `packagetrans`
   ADD CONSTRAINT `packagetrans_ibfk_1` FOREIGN KEY (`packageId`) REFERENCES `package` (`packageId`) ON UPDATE CASCADE,
   ADD CONSTRAINT `packagetrans_ibfk_2` FOREIGN KEY (`languageId`) REFERENCES `language` (`languageId`) ON UPDATE CASCADE;
 
 --
--- Restrições para a tabela `subcategory`
+-- Constraints for table `subcategory`
 --
 ALTER TABLE `subcategory`
   ADD CONSTRAINT `subcategory_ibfk_1` FOREIGN KEY (`categoryId`) REFERENCES `category` (`categoryId`) ON UPDATE CASCADE;
 
 --
--- Restrições para a tabela `subpackage`
+-- Constraints for table `subpackage`
 --
 ALTER TABLE `subpackage`
   ADD CONSTRAINT `subpackage_ibfk_1` FOREIGN KEY (`packageId`) REFERENCES `package` (`packageId`) ON UPDATE CASCADE;
 
 --
--- Restrições para a tabela `subpackagetrans`
+-- Constraints for table `subpackagetrans`
 --
 ALTER TABLE `subpackagetrans`
   ADD CONSTRAINT `subpackagetrans_ibfk_1` FOREIGN KEY (`subpackageId`) REFERENCES `subpackage` (`subPackageId`) ON UPDATE CASCADE,

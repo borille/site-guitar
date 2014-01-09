@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c65830d-f463-4c69-852b-44371799a8f7" name="Default" comment="- incluido autor do pacote&#10;- incluido tag no pacote">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.zfproject.xml" afterPath="$PROJECT_DIR$/.zfproject.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/My/Controller/Plugin/Internationalization.php" afterPath="$PROJECT_DIR$/library/My/Controller/Plugin/Internationalization.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php" afterPath="$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/PackageController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/PackageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" afterPath="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" afterPath="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/index/search.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/index/search.phtml" />
+    <list default="true" id="4c65830d-f463-4c69-852b-44371799a8f7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="site-guitar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389224959523" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389232108137" ignored="false" />
     <file path="/dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389229661766" ignored="false" />
     <file path="/ErrorController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381864858799" ignored="false" />
     <file path="/application.ini" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389221265844" ignored="false" />
@@ -786,7 +779,11 @@
       <created>1389224951038</created>
       <updated>1389224951038</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="- incluido default/package&#10;- alterações gerais">
+      <created>1389232121292</created>
+      <updated>1389232121292</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -856,7 +853,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- incluido autor do pacote&#10;- incluido tag no pacote" />
+    <option name="LAST_COMMIT_MESSAGE" value="- incluido default/package&#10;- alterações gerais" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -890,6 +887,7 @@
     <MESSAGE value="incluido sumario no blog" />
     <MESSAGE value="incluido search" />
     <MESSAGE value="- incluido autor do pacote&#10;- incluido tag no pacote" />
+    <MESSAGE value="- incluido default/package&#10;- alterações gerais" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

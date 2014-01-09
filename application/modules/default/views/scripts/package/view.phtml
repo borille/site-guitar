@@ -1,0 +1,33 @@
+<?php $this->title = $this->package['packageTransName'] ?>
+
+<div class="row">
+    <div class="col-md-4">
+        <ul>
+            <?php foreach ( $this->subPackage as $subPackage ): ?>
+                <li>
+                    <?php echo $subPackage['subPackageTransName'] ?>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <p><?php echo $this->package['packageTransDesc'] ?></p>
+
+        <p><?php echo $this->translate( 'instrument' ) . ': ' . $this->package['instrumentName'] ?></p>
+
+        <p><?php echo $this->translate( 'author' ) . ': ' .$this->package['authorName'] ?></p>
+
+        <p class="tags">
+            <span>Tags:</span>
+            <?php $tags = explode( ',', $this->package['packageTag'] ); ?>
+            <?php foreach ( $tags as $tag ): ?>
+                <a href="<?php echo $this->url( array( 'controller' => 'index', 'action' => 'search', 'txt-search' => trim( $tag ) ), null, true ); ?>"
+                   rel="tag"
+                   class="label label-default"><?php echo trim( $tag ) ?></a>
+            <?php endforeach; ?>
+        </p>
+    </div>
+</div>
+
+
+

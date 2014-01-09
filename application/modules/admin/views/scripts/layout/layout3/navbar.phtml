@@ -73,6 +73,11 @@ $action = Zend_Controller_Front::getInstance()->getRequest()->getActionName();
 								file
 							</a>
 						</li>
+						<li <?php echo ( $module == 'admin' && $controller == 'carousel' ) ? 'class="active"' : '' ?>>
+							<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'carousel' ), null, true ); ?>">
+								carousel
+							</a>
+						</li>
 					</ul>
 				<li>
 					<a href="<?php echo $this->url( array( 'module' => 'admin', 'controller' => 'user', 'action' => 'logout' ), null, true ); ?>">

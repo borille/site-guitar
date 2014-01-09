@@ -45,6 +45,7 @@ class My_Acl_Setup implements My_Acl_Interface
 			'admin:blog',
 			'admin:author',
 			'admin:file',
+			'admin:carousel',
 		);
 
 		$this->default = array(

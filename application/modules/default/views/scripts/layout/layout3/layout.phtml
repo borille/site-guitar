@@ -31,12 +31,7 @@ $this->javascriptHelper( $this->baseUrl() );
 
 <?php echo $this->partial( 'layout/layout3/header.phtml' ); ?>
 
-<?php
-if ( Zend_Controller_Front::getInstance()->getRequest()->getControllerName() == 'index' && Zend_Controller_Front::getInstance()->getRequest()->getActionName() == 'index' ) {
-	echo $this->partial( 'layout/layout2/carousel.phtml' );
-}
-?>
-
+<?php echo $this->carousel; ?>
 
 <div class="wrapper">
 	<div class="pushTop"><!--//--></div>

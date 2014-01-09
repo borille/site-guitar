@@ -13,6 +13,19 @@ class Default_PackageController extends Zend_Controller_Action
         // action body
     }
 
+    public function viewAction()
+    {
+        $id = $this->getRequest()->getParam( 'id' );
+
+        $tablePackage = new Default_Model_DbTable_Package();
+        $this->view->package = $tablePackage->getPackage( $id );
+
+        $tableSubPackage = new Default_Model_DbTable_SubPackage();
+        $this->view->subPackage = $tableSubPackage->getSubPackages( $id );
+    }
+
 
 }
+
+
 

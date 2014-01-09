@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c65830d-f463-4c69-852b-44371799a8f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.3.xsd" />
+    <list default="true" id="4c65830d-f463-4c69-852b-44371799a8f7" name="Default" comment="- incluido autor do pacote&#10;- incluido tag no pacote">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.zfproject.xml" afterPath="$PROJECT_DIR$/.zfproject.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/My/Controller/Plugin/Internationalization.php" afterPath="$PROJECT_DIR$/library/My/Controller/Plugin/Internationalization.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php" afterPath="$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/controllers/PackageController.php" afterPath="$PROJECT_DIR$/application/modules/default/controllers/PackageController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" afterPath="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" afterPath="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/modules/default/views/scripts/index/search.phtml" afterPath="$PROJECT_DIR$/application/modules/default/views/scripts/index/search.phtml" />
@@ -13,8 +13,8 @@
     </list>
     <ignored path="site-guitar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389224318006" ignored="false" />
-    <file path="/dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389224491768" ignored="false" />
+    <file path="/Dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389224959523" ignored="false" />
+    <file path="/dummy.txt" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389229661766" ignored="false" />
     <file path="/ErrorController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1381864858799" ignored="false" />
     <file path="/application.ini" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389221265844" ignored="false" />
     <file path="/Bootstrap.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383564790369" ignored="false" />
@@ -64,7 +64,7 @@
     <file path="/sign-up.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383156050087" ignored="false" />
     <file path="/SignUp.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383328465615" ignored="false" />
     <file path="/Log.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383159170692" ignored="false" />
-    <file path="/Internationalization.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1384192709494" ignored="false" />
+    <file path="/Internationalization.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389225992559" ignored="false" />
     <file path="/navbar.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389207617473" ignored="false" />
     <file path="/IndexController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389224638495" ignored="false" />
     <file path="/contact.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383310740560" ignored="false" />
@@ -127,24 +127,25 @@
     <file path="/Instrument.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383827438417" ignored="false" />
     <file path="/Abstract.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1383830746225" ignored="false" />
     <file path="/SubCategory.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1384432698025" ignored="false" />
-    <file path="/Package.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389224551308" ignored="false" />
+    <file path="/Package.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389229079621" ignored="false" />
     <file path="/SubCategoryController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1384432685674" ignored="false" />
-    <file path="/PackageController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389122326512" ignored="false" />
+    <file path="/PackageController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389230120236" ignored="false" />
     <file path="/PackageTrans.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389120207364" ignored="false" />
     <file path="/translate.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1384446684522" ignored="false" />
     <file path="/translate-add.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1384447166693" ignored="false" />
     <file path="/Tag.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1384449261423" ignored="false" />
-    <file path="/SubPackage.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389222756061" ignored="false" />
+    <file path="/SubPackage.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389230213637" ignored="false" />
     <file path="/translate-edit.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389119335078" ignored="false" />
     <file path="/SubPackageTrans.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389122012183" ignored="false" />
     <file path="/SubPackageController.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389222473531" ignored="false" />
     <file path="/Author.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389202623668" ignored="false" />
     <file path="/members.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389203284511" ignored="false" />
     <file path="/list.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389204678906" ignored="false" />
-    <file path="/view.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389204014421" ignored="false" />
-    <file path="/search.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389224889065" ignored="false" />
+    <file path="/view.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389231801736" ignored="false" />
+    <file path="/search.phtml" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389225088117" ignored="false" />
     <file path="/Category.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389221863860" ignored="false" />
     <file path="/a.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389224406770" ignored="false" />
+    <file path="/Zend_Translate.php" changelist="4c65830d-f463-4c69-852b-44371799a8f7" time="1389231477192" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,9 +178,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="zf create action translateAdd subpackage 1 admin" />
-      <command text="zf create action translateEdit subpackage 1 admin" />
-      <command text="zf create action translateDelete subpackage 1 admin" />
       <command text="zf create action translate SubPackage 1 admin" />
       <command text="zf create action translate SubPackage 1 admin" />
       <command text="zf create action translateAdd SubPackage 1 admin" />
@@ -202,6 +200,9 @@
       <command text="zf create action search index 1 default" />
       <command text="zf create db-table package package admin" />
       <command text="zf create db-table package package default" />
+      <command text="zf create controller package 1 default" />
+      <command text="zf create action view package 1 default" />
+      <command text="zf create db-table SubPackage subpackage default" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -218,10 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/navbar.phtml" />
-        <option value="$PROJECT_DIR$/application/modules/default/models/DbTable/Blog.php" />
-        <option value="$PROJECT_DIR$/application/configs/application.ini" />
-        <option value="$PROJECT_DIR$/application/modules/admin/forms/Category.php" />
         <option value="$PROJECT_DIR$/application/modules/admin/models/DbTable/Package.php" />
         <option value="$PROJECT_DIR$/application/modules/admin/models/DbTable/SubPackage.php" />
         <option value="$PROJECT_DIR$/application/modules/admin/controllers/SubPackageController.php" />
@@ -229,11 +226,15 @@
         <option value="$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/footer.phtml" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml" />
         <option value="$PROJECT_DIR$/application/modules/admin/forms/Package.php" />
-        <option value="$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php" />
         <option value="$PROJECT_DIR$/application/modules/default/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" />
-        <option value="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" />
+        <option value="$PROJECT_DIR$/library/My/Controller/Plugin/Internationalization.php" />
         <option value="$PROJECT_DIR$/application/modules/default/views/scripts/index/search.phtml" />
+        <option value="$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/controllers/PackageController.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/models/DbTable/SubPackage.php" />
+        <option value="$PROJECT_DIR$/data/locales/en/Zend_Translate.php" />
+        <option value="$PROJECT_DIR$/data/locales/pt/Zend_Translate.php" />
+        <option value="$PROJECT_DIR$/application/modules/default/views/scripts/package/view.phtml" />
       </list>
     </option>
   </component>
@@ -451,7 +452,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
+              <option name="myItemId" value="package" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-guitar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -747,7 +782,11 @@
       <created>1389224323382</created>
       <updated>1389224323382</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="- incluido autor do pacote&#10;- incluido tag no pacote">
+      <created>1389224951038</created>
+      <updated>1389224951038</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -858,93 +897,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/forms/PackageTrans.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="217" selection-end="557" vertical-scroll-proportion="0.49342105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/forms/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="51" selection-start="380" selection-end="380" vertical-scroll-proportion="0.39473686">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/models/DbTable/Package.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="556" selection-end="556" vertical-scroll-proportion="0.46875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/PackageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/models/DbTable/SubPackage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="315" selection-end="315" vertical-scroll-proportion="0.37815127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/views/scripts/package/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="72" selection-start="890" selection-end="890" vertical-scroll-proportion="0.6554622">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/SubPackageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="335" selection-end="335" vertical-scroll-proportion="0.3529412">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="93" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.77310926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/admin/views/scripts/layout/layout3/footer.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="70" selection-start="115" selection-end="138" vertical-scroll-proportion="0.07401316">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/admin/forms/Package.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="24" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.697479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="313" selection-end="313" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/locales/pt/Zend_Translate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="111" selection-end="133" vertical-scroll-proportion="0.33707866">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/locales/en/Zend_Translate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="131" selection-end="131" vertical-scroll-proportion="0.3166227">
           <folding />
         </state>
       </provider>
@@ -956,16 +911,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/layout/layout3/footer.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="32" selection-start="1532" selection-end="1693" vertical-scroll-proportion="0.53825134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/My/Controller/Plugin/Internationalization.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="37" selection-start="1606" selection-end="1606" vertical-scroll-proportion="-11.416667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/index/search.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="129" selection-end="129" vertical-scroll-proportion="0.11873351">
+        <state line="8" column="53" selection-start="456" selection-end="456" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/models/DbTable/Package.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="12" selection-start="456" selection-end="620" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="71" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.8812665">
+        <state line="51" column="50" selection-start="1389" selection-end="1389" vertical-scroll-proportion="0.54353565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/blog/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="66" selection-end="351" vertical-scroll-proportion="0.21067415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/blog/list.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1119" selection-end="1512" vertical-scroll-proportion="0.30029154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/views/scripts/package/view.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="113" selection-start="940" selection-end="940" vertical-scroll-proportion="0.6443149">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/locales/pt/Zend_Translate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="22" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.8848315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/locales/en/Zend_Translate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="4" selection-start="1326" selection-end="1360" vertical-scroll-proportion="0.6384181">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/models/DbTable/Package.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="752" selection-end="1308" vertical-scroll-proportion="0.40983605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/models/DbTable/SubPackage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="687" selection-end="687" vertical-scroll-proportion="0.53825134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/modules/default/controllers/PackageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="59" selection-start="577" selection-end="577" vertical-scroll-proportion="0.7519789">
           <folding />
         </state>
       </provider>

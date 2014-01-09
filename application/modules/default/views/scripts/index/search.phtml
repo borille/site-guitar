@@ -2,9 +2,13 @@
 <?php $this->subtitle = $this->search; ?>
 
 <?php if ( $this->package ): ?>
-    <h2><?php echo $this->translate('package') ?></h2>
+    <h2><?php echo $this->translate( 'package' ) ?></h2>
     <?php foreach ( $this->package as $package ): ?>
-        <h3><?php echo $package['packageName'] ?></h3>
+        <h3>
+            <a href="<?php echo $this->url( array( 'controller' => 'package', 'action' => 'view', 'id' => $package['packageId'] ), null, true ); ?>">
+                <?php echo $package['packageTransName'] ?>
+            </a>
+        </h3>
     <?php endforeach; ?>
 <?php endif; ?>
 

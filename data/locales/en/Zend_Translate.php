@@ -18,7 +18,7 @@ return array(
 	'confirm-password' => 'Confirm Password',
 	'create' => 'Create',
 	'linguagem' => 'Language',
-	'instrumento' => 'Instrument',
+	'instrument' => 'Instrument',
 	'mail' => 'Email',
 	//login
 	'login-error' => 'Invalid User or Password',
@@ -48,5 +48,7 @@ return array(
 	'posted' => 'Posted',
 	'by' => 'by',
 	//search
-	'results' => 'Results'
+	'results' => 'Results',
+    //package
+    'author' => 'Author'
 );

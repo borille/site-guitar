@@ -18,7 +18,7 @@ return array(
 	'confirm-password' => 'Confirmar Senha',
 	'create' => 'Criar',
 	'linguagem' => 'Linguagem',
-	'instrumento' => 'Instrumento',
+	'instrument' => 'Instrumento',
 	'mail' => 'E-mail',
 	//login
 	'login-error' => 'Usuário ou Senha Inválidos',
@@ -48,5 +48,7 @@ return array(
 	'posted' => 'Postado',
 	'by' => 'por',
 	//search
-	'results' => 'Resultados'
+	'results' => 'Resultados',
+    //package
+    'author' => 'Autor'
 );

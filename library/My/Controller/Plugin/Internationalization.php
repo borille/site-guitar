@@ -7,6 +7,7 @@ class My_Controller_Plugin_Internationalization extends Zend_Controller_Plugin_A
     {
         $locale = Zend_Registry::get( 'Zend_Locale' );
         $translate = Zend_Registry::get( 'Zend_Translate' );
+        $language = new Zend_Session_Namespace('language');
 
         if ( !Zend_Auth::getInstance()->hasIdentity() )
         {
@@ -16,11 +17,13 @@ class My_Controller_Plugin_Internationalization extends Zend_Controller_Plugin_A
                 case 'en_US':
                     $locale->setLocale( 'en' );
                     $translate->setLocale( "en" );
+                    $language->id = 2;
                     break;
                 case 'pt':
                 case 'pt_BR':
                     $locale->setLocale( 'pt' );
                     $translate->setLocale( "pt" );
+                    $language->id = 1;
                     break;
             }
         }
@@ -31,14 +34,17 @@ class My_Controller_Plugin_Internationalization extends Zend_Controller_Plugin_A
                 case 1:
                     $locale->setLocale( 'pt' );
                     $translate->setLocale( "pt" );
+                    $language->id = 1;
                     break;
                 case 2:
                     $locale->setLocale( 'en' );
                     $translate->setLocale( "en" );
+                    $language->id = 2;
                     break;
                 default:
                     $locale->setLocale( 'pt' );
                     $translate->setLocale( "pt" );
+                    $language->id = 1;
                     break;
             }
         }
